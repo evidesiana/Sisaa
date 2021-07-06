@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* NavBar section */
+#Nav {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.NavBar {
+  width: 100%;
+  height: auto;
+  padding: 0 5%;
+  padding-top: 1rem;
+}
+.NavBar-container {
+  height: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.NavBar-logo {
+  width: auto;
+  height: auto;
+}
+.NavBar-logo img {
+  width: 6rem;
+  height: auto;
+}
+.NavBar-list {
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.NavBar-list span {
+  color: rgb(255, 255, 255);
+}
+
+/* Heading sections */
+#Heading {
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.Heading-text {
+  width: 100%;
+  height: 130vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.Heading-text-wrap {
+  width: 35%;
+  height: auto;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  transform: translate(0%, -40%);
+}
+.Heading-text-header {
+  margin-bottom: 2rem;
+}
+.Heading-text-header h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: rgb(255, 255, 255);
+}
+.Heading-text-wrap p {
+  margin-bottom: 2rem;
+  color: rgb(255, 255, 255);
+}
+.Heading-text-wrap-btm {
+  width: 35%;
+  height: auto;
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  transform: translate(0%, -90%);
+}
+.Heading-text-wrap-btm p {
+  margin-bottom: 2rem;
+  color: rgb(255, 255, 255);
+}
+
+/* Heading animation sections */
+.Heading-animation {
+  width: 100%;
+  height: 100vh;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  overflow: hidden;
+}
+.Heading-animation img {
+  width: 100vw;
+  height: 100%;
+}
+
+/* Our Service Sections */
+#OurService {
+  width: 100%;
+  height: 100%;
+  padding: 0 5%;
+  position: relative;
+}
+.OurService-header {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 2rem 0;
+  padding-top: 5rem;
+  margin-bottom: 3rem;
+}
+.OurService-header h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.OurService-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.OurService-content-left {
+  width: 100%;
+  height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.OurService-content-left-img {
+  width: 100%;
+  height: auto;
+  padding: 0 3rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20%;
+  bottom: 20%;
+}
+.OurService-content-left-img img {
+  width: 100%;
+  height: auto;
+}
+.OurService-content-right {
+  width: 100%;
+  height: auto;
+}
+.OurService-content-right-wrap {
+  width: 100%;
+  height: 55vh;
+}
+.OurService-content-right-header {
+  width: 80%;
+  height: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.OurService-content-right-header h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.OurService-content-right-header h2 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.OurService-content-right-text {
+  width: 90%;
+  height: auto;
+  text-align: justify;
+}
+.OurService-content-right-text p {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+/* Our Platform Sections */
+#Platform {
+  width: 100%;
+  height: auto;
+  padding: 0 5%;
+  position: relative;
+}
+.Platform-header {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.Platform-header-container {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+.Platform-header-container h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.Platform-header-container h2 {
+  font-size: 1rem;
+  font-weight: 200;
+  margin-top: 1rem;
+}
+.Platform-content {
+  width: 100%;
+  height: auto;
+}
+.Platform-content-container {
+  width: 100%;
+  height: 45vh;
+}
+.Platform-content-wrap {
+  width: 30%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  margin: 2.5rem 0;
+}
+.Platform-content-wrap h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.Platform-content-wrap p {
+  font-size: 1rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+.regulator {
+  position: absolute;
+  right: 5%;
+  text-align: right;
+}
+
+/* AboutUs section */
+#AboutUs {
+  width: 100%;
+  height: auto;
+  padding: 0 5%;
+  padding-top: 2rem;
+  position: relative;
+}
+.AboutUs-header {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.AboutUs-header h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
