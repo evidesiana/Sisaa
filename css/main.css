@@ -299,7 +299,66 @@
   margin-bottom: 1rem;
 }
 .AboutUs-company-info p {
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 200;
   text-align: justify;
+}
+#ContactUs {
+  width: 100%;
+  height: auto;
+  padding: 0 5%;
+  padding-top: 9rem;
+  padding-bottom: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ContactUs-text {
+  width: 40vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ContactUs-text-wrap {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.ContactUs-text-wrap h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.ContactUs-text-wrap-text{
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+.ContactUs-text-wrap h2 {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+.ContactUs-form {
+  width: 40vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ContactUs-form-wrap{
+  width: 100%;
+  height: auto;
+}
+.ContactUs-form-content{
+  width: 100%;
+  height: auto;
+}
+.ContactUs-form-item{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
 }
