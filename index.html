@@ -138,47 +138,55 @@
     </div>
   </section>
   <section id="Platform">
-    <div class="Platform-header">
-      <div class="Platform-header-container lax lax_preset_fadeIn:200:0">
-        <h1>One platform, endless benefits</h1>
-        <h2>
-          Intelligent, holistic, and cutting-edge technology. SISAA offers a
-          next generation platform that is modular, scalable and highly
-          efficient for managing assets across global markets.
-        </h2>
-      </div>
+    <div class="Platform-background">
+      <video autoplay muted loop id="Bg">
+        <source src="./asset/video/world_map.mp4" type="video/mp4">
+        Internet slow, or your browser does not support.
+      </video>
     </div>
-    <div class="Platform-content">
-      <div class="Platform-content-container">
-        <div class="Platform-content-wrap asset lax lax_preset_fadeIn:200:0">
-          <h1>Compliant asset acquisition</h1>
-          <p>
-            Our digital end-to-end platform ensures smooth and compliant
-            client novation processes. Highly customizable digital end-to -end
-            processes can be adjusted to local regulatory or specific
-            compliance requirements to cover all aspects like asset screening,
-            KYC u pdat es or data migration
-          </p>
+    <div class="Platform-wrap">
+      <div class="Platform-header">
+        <div class="Platform-header-container lax lax_preset_fadeIn:200:0">
+          <h1>One platform, endless benefits</h1>
+          <h2>
+            Intelligent, holistic, and cutting-edge technology. SISAA offers a
+            next generation platform that is modular, scalable and highly
+            efficient for managing assets across global markets.
+          </h2>
         </div>
       </div>
-      <div class="Platform-content-container">
-        <div class="Platform-content-wrap regulator lax lax_preset_fadeIn:200:0">
-          <h1>Regulatory KYC requirements</h1>
-          <p>
-            Our fully digital compliance processes cover all aspects of
-            Know-Your-Customer (KYC) and client onboarding while
-            simultaneously lowering regulatory risks and your manual workload
-          </p>
+      <div class="Platform-content">
+        <div class="Platform-content-container">
+          <div class="Platform-content-wrap asset lax lax_preset_fadeIn:200:0">
+            <h1>Compliant asset acquisition</h1>
+            <p>
+              Our digital end-to-end platform ensures smooth and compliant
+              client novation processes. Highly customizable digital end-to -end
+              processes can be adjusted to local regulatory or specific
+              compliance requirements to cover all aspects like asset screening,
+              KYC u pdat es or data migration
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="Platform-content-container">
-        <div class="Platform-content-wrap portfolio lax lax_preset_fadeIn:200:0">
-          <h1>Portfolio management systems</h1>
-          <p>
-            Our fully digital compliance processes cover all aspects of
-            Know-Your-Customer (KYC) and client onboarding while
-            simultaneously lowering regulatory risks and your manual workload
-          </p>
+        <div class="Platform-content-container">
+          <div class="Platform-content-wrap regulator lax lax_preset_fadeIn:200:0">
+            <h1>Regulatory KYC requirements</h1>
+            <p>
+              Our fully digital compliance processes cover all aspects of
+              Know-Your-Customer (KYC) and client onboarding while
+              simultaneously lowering regulatory risks and your manual workload
+            </p>
+          </div>
+        </div>
+        <div class="Platform-content-container">
+          <div class="Platform-content-wrap portfolio lax lax_preset_fadeIn:200:0">
+            <h1>Portfolio management systems</h1>
+            <p>
+              Our fully digital compliance processes cover all aspects of
+              Know-Your-Customer (KYC) and client onboarding while
+              simultaneously lowering regulatory risks and your manual workload
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -220,18 +228,19 @@
     </div>
     <div class="ContactUs-form">
       <div class="ContactUs-form-wrap">
+        <div class="ContactUs-form-title">
+          <h1>Contact Form</h1>
+        </div>
         <form action="" method="get" class="ContactUs-form-content">
-          <div class="ContactUs-form-item">
-            <label for="name">Name </label>
-            <input type="text" name="name" id="name" required>
+          <div class="ContactUs-form-item input">
+            <input type="text" name="name" id="name" placeholder="Name" required>
           </div>
-          <div class="ContactUs-form-item">
-            <label for="email">Email Address </label>
-            <input type="email" name="email" id="email" required>
+          <div class="ContactUs-form-item input">
+            <input type="email" name="email" id="email" placeholder="Email Address" required>
           </div>
-          <div class="ContactUs-form-item">
-            <label for="email">Email Address </label>
-            <textarea id="story" name="story" rows="10"></textarea>
+          <div class="ContactUs-form-item textarea">
+            <label for="name">Message </label>
+            <textarea id="story" name="story" rows="8" required></textarea>
           </div>
           <div class="ContactUs-form-btn">
             <button type="submit">Send</button>

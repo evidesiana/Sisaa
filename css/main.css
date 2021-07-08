@@ -194,13 +194,38 @@
 /* Our Platform Sections */
 #Platform {
   width: 100%;
+  height: 250vh;
+  position: relative;
+  margin-top: 5rem;
+}
+.Platform-background{
+  width: auto;
+  height: auto;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  opacity: 0.9;
+  overflow: hidden;
+}
+.Platform-background #Bg{
+  width: 100vw;
+  height: auto;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+.Platform-wrap{
+  width: 100%;
   height: auto;
   padding: 0 5%;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
 }
 .Platform-header {
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -303,6 +328,8 @@
   font-weight: 200;
   text-align: justify;
 }
+
+/* Contact us sections */
 #ContactUs {
   width: 100%;
   height: auto;
@@ -331,7 +358,7 @@
   font-weight: 400;
   line-height: 1.2;
 }
-.ContactUs-text-wrap-text{
+.ContactUs-text-wrap-text {
   width: 100%;
   height: auto;
   margin-top: 1rem;
@@ -347,18 +374,87 @@
   justify-content: center;
   align-items: center;
 }
-.ContactUs-form-wrap{
+.ContactUs-form-wrap {
   width: 100%;
   height: auto;
 }
-.ContactUs-form-content{
+.ContactUs-form-title{
+width: fit-content;
+height: auto;
+margin-bottom: 4rem;
+padding: .5rem 2rem;
+background-color: black;
+}
+.ContactUs-form-title h1 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+.ContactUs-form-content {
   width: 100%;
   height: auto;
 }
-.ContactUs-form-item{
+.ContactUs-form-content .input {
+  width: 60%;
+}
+.ContactUs-form-content .input #email {
+  margin-top: 0.5rem;
+}
+.ContactUs-form-content .textarea {
+  margin-top: 2rem;
+}
+.ContactUs-form-item {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
+}
+.ContactUs-form-item input {
+  font-size: 1.2rem;
+  font-weight: 200;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: rgb(163, 163, 163);
+}
+.ContactUs-form-item input:focus {
+  font-size: 1rem;
+  font-weight: 200;
+  outline: none !important;
+  border: 2px solid rgb(163, 163, 163);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  box-shadow: none;
+  background-color: rgb(255, 255, 255);
+}
+.ContactUs-form-item textarea {
+  font-size: 1rem;
+  font-weight: 300;
+  border: 2px solid rgb(163, 163, 163);
+  color: rgb(131, 131, 131);
+}
+.ContactUs-form-item textarea:focus {
+  font-size: 1rem;
+  font-weight: 200;
+  outline: none !important;
+  border: 2px solid rgb(163, 163, 163);
+  box-shadow: none;
+  background-color: rgb(255, 255, 255);
+}
+.ContactUs-form-item label {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: rgb(131, 131, 131);
+}
+.ContactUs-form-btn {
+  width: auto;
+  height: auto;
+}
+.ContactUs-form-btn button {
+  padding: 0.5rem 2rem;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
