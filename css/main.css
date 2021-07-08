@@ -338,20 +338,23 @@
   padding-bottom: 2rem;
   position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .ContactUs-text {
-  width: 40vw;
-  height: 50vh;
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5rem;
 }
 .ContactUs-text-wrap {
   width: 100%;
   height: auto;
   margin: 0 auto;
+  text-align: center;
 }
 .ContactUs-text-wrap h1 {
   font-size: 2.5rem;
@@ -368,7 +371,7 @@
   font-weight: 200;
 }
 .ContactUs-form {
-  width: 40vw;
+  width: fit-content;
   height: auto;
   display: flex;
   justify-content: center;
@@ -378,27 +381,25 @@
   width: 100%;
   height: auto;
 }
-.ContactUs-form-title {
-  width: fit-content;
-  height: auto;
-  margin-bottom: 4rem;
-}
-.ContactUs-form-title h1 {
-  font-size: 1.2rem;
-  font-weight: 400;
-}
 .ContactUs-form-content {
+  width: 70vw;
+  height: auto;
+}
+.ContactUs-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+.ContactUs-form-info {
   width: 100%;
   height: auto;
 }
 .ContactUs-form-content .input {
-  width: 60%;
+  width: 90%;
 }
 .ContactUs-form-content .input #email {
-  margin-top: 0.5rem;
-}
-.ContactUs-form-content .textarea {
-  margin-top: 2rem;
+  margin-top: 4.55rem;
 }
 .ContactUs-form-item {
   width: 100%;
@@ -431,6 +432,12 @@
   font-weight: 300;
   border: 2px solid rgb(163, 163, 163);
   color: rgb(131, 131, 131);
+  padding: 0.5rem;
+
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: rgb(163, 163, 163);
 }
 .ContactUs-form-item textarea:focus {
   font-size: 1rem;
@@ -440,20 +447,20 @@
   box-shadow: none;
   background-color: rgb(255, 255, 255);
 }
-.ContactUs-form-item label {
-  font-size: 1rem;
-  font-weight: 200;
-  color: rgb(131, 131, 131);
-}
 .ContactUs-form-btn {
-  width: auto;
+  width: 100%;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
 }
 .ContactUs-form-btn button {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 5rem;
   border: none;
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
+  border-radius: 0.3rem;
 }
 #footer {
   width: 100%;
@@ -471,7 +478,7 @@
   justify-content: space-between;
 }
 .footer-menu-wrap {
-  width: 80vw;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -483,14 +490,28 @@
   height: auto;
 }
 .footer-logo img {
-  width: 40%;
+  width: 15%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.footer-menu-list {
+  width: 100%;
   height: auto;
 }
-.footer-menu-arrow{
+.footer-menu-list ul{
+  width: 100%;
+  height: auto;
+}
+.footer-menu-list h2{
+  font-size: 1rem;
+    font-weight: 400;
+}
+.footer-menu-arrow {
   width: auto;
   height: auto;
 }
-.footer-menu-arrow i{
+.footer-menu-arrow i {
   cursor: pointer;
   font-size: 2rem;
   margin-top: 1rem;
@@ -507,10 +528,6 @@
     margin-top: 1rem;
   }
 }
-.footer-menu-list{
-  width: 100%;
-  height: auto;
-}
 .footer-menu-list ul li {
   list-style: none;
   list-style-type: none;
@@ -519,7 +536,7 @@
   font-weight: 200;
   cursor: pointer;
 }
-.footer-info{
+.footer-info {
   width: 100%;
   height: auto;
   display: flex;
@@ -528,22 +545,22 @@
   align-items: center;
   margin-top: 5rem;
 }
-.footer-info-copy{
+.footer-info-copy {
   width: auto;
   height: auto;
 }
-.footer-info-copy h2{
-  font-size: .8rem;
+.footer-info-copy h2 {
+  font-size: 0.8rem;
   font-weight: 200;
 }
-.footer-info-icon{
+.footer-info-icon {
   width: 10vw;
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.footer-info-icon i{
- font-size: 1.5rem;
- cursor: pointer;
+.footer-info-icon i {
+  font-size: 1.5rem;
+  cursor: pointer;
 }
