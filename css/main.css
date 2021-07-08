@@ -382,13 +382,10 @@
   width: fit-content;
   height: auto;
   margin-bottom: 4rem;
-  padding: 0.5rem 2rem;
-  background-color: black;
 }
 .ContactUs-form-title h1 {
   font-size: 1.2rem;
   font-weight: 400;
-  color: rgb(255, 255, 255);
 }
 .ContactUs-form-content {
   width: 100%;
@@ -494,6 +491,7 @@
   height: auto;
 }
 .footer-menu-arrow i{
+  cursor: pointer;
   font-size: 2rem;
   margin-top: 1rem;
   animation: pulse 1s ease-in-out infinite;
@@ -547,5 +545,5 @@
 }
 .footer-info-icon i{
  font-size: 1.5rem;
- 
+ cursor: pointer;
 }
