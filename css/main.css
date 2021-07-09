@@ -526,10 +526,11 @@
 .ContactUs-form-item input {
   font-size: 1rem;
   font-weight: 200;
+  border: 2px solid rgb(163, 163, 163);
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  border-color: rgb(163, 163, 163);
+  box-sizing: border-box;
 }
 .ContactUs-form-item input:focus {
   font-size: 1rem;
