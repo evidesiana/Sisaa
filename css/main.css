@@ -84,7 +84,7 @@
 /* Heading sections */
 #Heading {
   width: 100%;
-  height: 200vh;
+  height: 300vh;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -101,9 +101,9 @@
   width: 35%;
   height: auto;
   position: absolute;
-  top: 25%;
-  left: 10%;
-  transform: translate(0%, -25%);
+  top: 12%;
+  left: 5%;
+  transform: translate(12%);
 }
 .Heading-text-header {
   margin-bottom: 2rem;
