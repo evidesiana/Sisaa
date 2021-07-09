@@ -54,7 +54,7 @@
   list-style-type: none;
   color: rgb(255, 255, 255);
 }
-.NavBar-list-menu li a{
+.NavBar-list-menu li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-weight: 200;
@@ -69,12 +69,12 @@
   list-style-type: none;
   color: rgb(255, 255, 255);
 }
-.NavBar-list-investor li a{
+.NavBar-list-investor li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-weight: 500;
 }
-.NavBar-list-investor span{
+.NavBar-list-investor span {
   margin: 0 1rem;
 }
 
@@ -159,8 +159,23 @@
   margin-bottom: 3rem;
 }
 .OurService-header h1 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 400;
+  background: linear-gradient(
+    90deg,
+    #ab6bff,
+    #9ad5f9 15%,
+    #575df0 35%,
+    #ab6bff 50%,
+    #9ad5f9 65%,
+    #575df0 85%,
+    #ab6bff
+  );
+  background-size: 400%;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: textcolor 10s linear infinite;
 }
 .OurService-content {
   width: 100%;
@@ -258,20 +273,35 @@
 }
 .Platform-header {
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 .Platform-header-container {
-  width: 50%;
+  width: 55%;
   height: auto;
   margin: 0 auto;
 }
 .Platform-header-container h1 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 400;
+  background: linear-gradient(
+    90deg,
+    #ab6bff,
+    #9ad5f9 15%,
+    #575df0 35%,
+    #ab6bff 50%,
+    #9ad5f9 65%,
+    #575df0 85%,
+    #ab6bff
+  );
+  background-size: 400%;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: textcolor 10s linear infinite;
 }
 .Platform-header-container h2 {
   font-size: 1rem;
@@ -327,8 +357,23 @@
   margin-bottom: 2rem;
 }
 .AboutUs-header h1 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 400;
+  background: linear-gradient(
+    90deg,
+    #ab6bff,
+    #9ad5f9 15%,
+    #575df0 35%,
+    #ab6bff 50%,
+    #9ad5f9 65%,
+    #575df0 85%,
+    #ab6bff
+  );
+  background-size: 400%;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: textcolor 10s linear infinite;
 }
 
 .AboutUs-map {
@@ -389,10 +434,35 @@
   margin: 0 auto;
   text-align: center;
 }
+
 .ContactUs-text-wrap h1 {
   font-size: 2.5rem;
   font-weight: 400;
   line-height: 1.2;
+  background: linear-gradient(
+    90deg,
+    #ab6bff,
+    #9ad5f9 15%,
+    #575df0 35%,
+    #ab6bff 50%,
+    #9ad5f9 65%,
+    #575df0 85%,
+    #ab6bff
+  );
+  background-size: 400%;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: textcolor 10s linear infinite;
+}
+
+@keyframes textcolor {
+  0% {
+    background-position: 400%;
+  }
+  100% {
+    background-position: 0%;
+  }
 }
 .ContactUs-text-wrap-text {
   width: 100%;
@@ -536,11 +606,11 @@
 }
 
 .footer-logo-address h2 {
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 300;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
-.footer-logo-address h2 i{
+.footer-logo-address h2 i {
   margin-right: 1rem;
 }
 
@@ -569,13 +639,16 @@
     margin-top: 1rem;
   }
 }
+.footer-menu-arrow span {
+  cursor: pointer;
+}
 .footer-info {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items:flex-end;
+  align-items: flex-end;
   margin-top: 2rem;
 }
 .footer-info-copy {
@@ -586,4 +659,3 @@
   font-size: 0.8rem;
   font-weight: 200;
 }
-

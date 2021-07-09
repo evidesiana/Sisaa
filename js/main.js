@@ -46,5 +46,11 @@ if (typeof myVideo.loop == 'boolean') { // loop supported
     this.play();
   }, false);
 }
-//...
 myVideo.play();
+
+// FOOTER BACK TOP BUTTON
+document.getElementById("arrow").addEventListener("click", scrollTop);
+function scrollTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
