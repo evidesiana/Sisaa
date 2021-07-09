@@ -1,3 +1,20 @@
+// NAVBAR FIX POSITION
+$(document).ready(function() {
+  $(document).scroll(function () {
+      const headerHeigh = $('#Heading')[0].scrollHeight
+      const scrollPosition = $(window).scrollTop();
+  
+      if (scrollPosition >= headerHeigh) {
+          $('.NavBar').css({"position":"fixed","top":"0", "background-color": "rgb(0, 0, 0)"});
+          $('.NavBar-list ul li a').css({"color": "rgb(255, 255, 255)"});
+      } else {
+          $('.NavBar').css({"position":"static","top":"auto", "background-color": "rgba(255, 255, 255, 0)"});
+          $('.NavBar-list ul li a').css({"color": "rgb(255, 255, 255)"});
+      }
+  });
+});
+
+
 // LAX.JS SCROLL SETTING
 window.onload = function () {
     lax.init()

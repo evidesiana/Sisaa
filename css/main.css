@@ -17,8 +17,7 @@
 .NavBar {
   width: 100%;
   height: auto;
-  padding: 0 5%;
-  padding-top: 1rem;
+  padding: 1rem 5%;
 }
 .NavBar-container {
   height: 100%;
@@ -31,19 +30,29 @@
 .NavBar-logo {
   width: auto;
   height: auto;
+  display: flex;
+  align-items: center;
 }
 .NavBar-logo img {
   width: 6rem;
-  height: auto;
+  height: 100%;
 }
 .NavBar-list {
-  width: 30%;
+  width: 50%;
+  height: auto;
+}
+.NavBar-list ul {
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  list-style: none;
+  list-style-type: none;
+  color: rgb(255, 255, 255);
 }
-.NavBar-list span {
+.NavBar-list ul li a{
+  text-decoration: none;
   color: rgb(255, 255, 255);
 }
 
@@ -117,6 +126,7 @@
   height: 100%;
   padding: 0 5%;
   position: relative;
+  padding-top: 2rem;
 }
 .OurService-header {
   width: 100%;
@@ -197,6 +207,7 @@
   height: 250vh;
   position: relative;
   margin-top: 9rem;
+  margin-bottom: 5.5rem;
 }
 .Platform-background {
   width: auto;
@@ -281,7 +292,7 @@
   width: 100%;
   height: auto;
   padding: 0 5%;
-  padding-top: 9rem;
+  padding-top: 5rem;
   position: relative;
 }
 .AboutUs-header {
@@ -334,7 +345,7 @@
   width: 100%;
   height: auto;
   padding: 0 5%;
-  padding-top: 9rem;
+  padding-top: 6.5rem;
   padding-bottom: 2rem;
   position: relative;
   display: flex;
@@ -462,6 +473,8 @@
   color: rgb(255, 255, 255);
   border-radius: 0.3rem;
 }
+
+/* Footer section */
 #footer {
   width: 100%;
   height: auto;
@@ -495,20 +508,43 @@
   margin-bottom: 2rem;
 }
 
+.footer-logo-address {
+  width: 100%;
+  height: auto;
+}
+
+.footer-logo-address h2 {
+  font-size: .9rem;
+  font-weight: 300;
+  margin-bottom: .5rem;
+}
+.footer-logo-address h2 i{
+  margin-right: 1rem;
+}
 .footer-menu-list {
   width: 100%;
   height: auto;
+  display: flex;
+  align-items: center;
 }
-.footer-menu-list ul{
-  width: 100%;
+.footer-menu-list ul {
+  width: 50%;
   height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
 }
-.footer-menu-list h2{
+.footer-menu-list ul li {
+  list-style: none;
+  list-style-type: none;
   font-size: 1rem;
-    font-weight: 400;
+  font-weight: 200;
+  cursor: pointer;
 }
+
 .footer-menu-arrow {
-  width: auto;
+  width: 10%;
   height: auto;
 }
 .footer-menu-arrow i {
@@ -528,14 +564,6 @@
     margin-top: 1rem;
   }
 }
-.footer-menu-list ul li {
-  list-style: none;
-  list-style-type: none;
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  font-weight: 200;
-  cursor: pointer;
-}
 .footer-info {
   width: 100%;
   height: auto;
@@ -543,7 +571,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 .footer-info-copy {
   width: auto;
