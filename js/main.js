@@ -1,7 +1,8 @@
 // NAVBAR FIX POSITION
 $(document).ready(function() {
   $(document).scroll(function () {
-      const headerHeigh = $('#Heading')[0].scrollHeight
+      const header = $('#Heading')[0].scrollHeight;
+      const headerHeigh = header - 50;
       const scrollPosition = $(window).scrollTop();
   
       if (scrollPosition >= headerHeigh) {
