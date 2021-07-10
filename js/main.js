@@ -36,7 +36,7 @@ const canvas = document.getElementById("Thee_d");
 const context = canvas.getContext("2d");
 
 const frameCount = 148 ;
-const currentFrame = (index) =>`/asset/images/3D/${index.toString().padStart(4, "0")}.jpg`;
+const currentFrame = (index) =>`/Sisaa/asset/images/3D/${index.toString().padStart(4, "0")}.jpg`;
 const preloadImages = () => {
   for (let i = 1; i < frameCount; i++) {
     const img = new Image();
