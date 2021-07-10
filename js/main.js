@@ -1,13 +1,3 @@
-// LINK LOGO
-document.getElementById("logo").addEventListener("click", Home);
-function Home(event) {
-  event.preventDefault();
-  // GITHUB LINK
-  location.replace("/Sisaa");
-  // ORIGINAL LINK
-  // location.replace("/index.html");
-}
-
 // NAVBAR FIX POSITION
 $(document).ready(function () {
   $(document).scroll(function () {
@@ -27,7 +17,8 @@ $(document).ready(function () {
 document.getElementById("logo").addEventListener("click", PageOne);
 function PageOne(event) {
   event.preventDefault();
-  location.replace("/index.html");
+  location.replace("/Sisaa");
+  // location.replace("/index.html");
 }
 
 // BACKGROUND SCROLL 3D
