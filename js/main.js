@@ -1,3 +1,11 @@
+// LINK LOGO
+document.getElementById("logo").addEventListener("click", Home);
+function Home(event) {
+    event.preventDefault();
+    location.replace("/Sisaa/index.html");
+    // location.replace("/index.html");
+}
+
 // NAVBAR FIX POSITION
 $(document).ready(function () {
   $(document).scroll(function () {
@@ -6,19 +14,9 @@ $(document).ready(function () {
     const scrollPosition = $(window).scrollTop();
     console.log(scrollPosition);
     if (scrollPosition >= headerHeigh) {
-      $(".NavBar").css({
-        position: "fixed",
-        top: "0",
-        "background-color": "rgb(0, 0, 0)",
-      });
-      $(".NavBar-list ul li a").css({ color: "rgb(255, 255, 255)" });
+      $( "#Nav" ).addClass( "Navbar-active" );
     } else {
-      $(".NavBar").css({
-        position: "static",
-        top: "auto",
-        "background-color": "rgba(255, 255, 255, 0)",
-      });
-      $(".NavBar-list ul li a").css({ color: "rgb(255, 255, 255)" });
+      $( "#Nav" ).removeClass( "Navbar-active" )
     }
   });
 });
@@ -35,8 +33,12 @@ const html = document.documentElement;
 const canvas = document.getElementById("Thee_d");
 const context = canvas.getContext("2d");
 
-const frameCount = 148 ;
-const currentFrame = (index) =>`/Sisaa/asset/images/3D/${index.toString().padStart(4, "0")}.jpg`;
+const frameCount = 148;
+const currentFrame = (index) =>
+  // ORIGINAL LINK
+  `/asset/images/3D/${index.toString().padStart(4, "0")}.jpg`;
+// GITHUB LINK
+// `/Sisaa/asset/images/3D/${index.toString().padStart(4, "0")}.jpg`;
 const preloadImages = () => {
   for (let i = 1; i < frameCount; i++) {
     const img = new Image();

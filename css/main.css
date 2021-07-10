@@ -80,6 +80,15 @@
 .NavBar-list-investor span {
   margin: 0 1rem;
 }
+.Navbar-active{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  position: sticky !important;
+  position: -webkit-sticky !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 100;
+}
 
 /* Heading sections */
 #Heading {
