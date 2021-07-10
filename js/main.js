@@ -35,7 +35,7 @@ const html = document.documentElement;
 const canvas = document.getElementById("Thee_d");
 const context = canvas.getContext("2d");
 
-const frameCount = 148;
+const frameCount = 148 ;
 const currentFrame = (index) =>
   
 `/asset/images/3D/${index
