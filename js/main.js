@@ -17,8 +17,11 @@ $(document).ready(function () {
 document.getElementById("logo").addEventListener("click", PageOne);
 function PageOne(event) {
   event.preventDefault();
-  location.replace("/Sisaa");
+  // ORIGINAL LINK
   // location.replace("/index.html");
+
+  // GITHUB LINK
+  location.replace("/Sisaa");
 }
 
 // BACKGROUND SCROLL 3D
@@ -30,6 +33,7 @@ const frameCount = 148;
 const currentFrame = (index) =>
   // ORIGINAL LINK
   // `/asset/images/3D/${index.toString().padStart(4, "0")}.jpg`;
+  
   // GITHUB LINK
   `/Sisaa/asset/images/3D/${index.toString().padStart(4, "0")}.jpg`;
 const preloadImages = () => {

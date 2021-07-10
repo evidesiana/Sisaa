@@ -169,6 +169,7 @@
   padding: 0 5%;
   position: relative;
   padding-top: 1.5rem;
+  
 }
 .OurService-header {
   width: 100%;
@@ -202,23 +203,19 @@
   height: auto;
   display: flex;
   flex-direction: row;
-  position: relative;
 }
 .OurService-content-left {
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 20%;
+  bottom: 20%;
 }
 .OurService-content-left-img {
   width: 100%;
   height: auto;
   padding: 0 3rem;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 20%;
-  bottom: 20%;
 }
 .OurService-content-left-img img {
   width: 100%;
@@ -227,10 +224,14 @@
 .OurService-content-right {
   width: 100%;
   height: auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+
 }
 .OurService-content-right-wrap {
   width: 100%;
-  height: 55vh;
+  height: 50vh;
 }
 .OurService-content-right-header {
   width: 80%;
@@ -261,7 +262,7 @@
 /* Our Platform Sections */
 #Platform {
   width: 100%;
-  height: 250vh;
+  height: 255vh;
   position: relative;
   margin-top: 9rem;
   margin-bottom: 5.5rem;
@@ -291,6 +292,7 @@
   top: 0;
   left: 0;
   color: white;
+  z-index: 2;
 }
 .Platform-header {
   width: 100%;

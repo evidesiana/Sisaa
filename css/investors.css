@@ -90,7 +90,7 @@ title img {
   position: -webkit-sticky !important;
   top: 0 !important;
   left: 0 !important;
-  z-index: 100;
+  z-index: 10 !important;
 }
 
 /* INVESTOR SECTIONS */
