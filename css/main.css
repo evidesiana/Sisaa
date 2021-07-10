@@ -269,7 +269,7 @@
   z-index: 0;
 }
 .Platform-background {
-  width: auto;
+  width: 100%;
   height: auto;
   position: sticky;
   position: -webkit-sticky;
