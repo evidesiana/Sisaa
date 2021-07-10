@@ -3,7 +3,7 @@ document.getElementById("logo").addEventListener("click", Home);
 function Home(event) {
   event.preventDefault();
   // GITHUB LINK
-  location.replace("/Sisaa/index.html");
+  location.replace("/Sisaa");
   // ORIGINAL LINK
   // location.replace("/index.html");
 }
