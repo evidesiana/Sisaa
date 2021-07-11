@@ -124,15 +124,6 @@ title img {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-.Investor-logo {
-  width: 3rem;
-  height: auto;
-  margin: 0 auto;
-}
-.Investor-logo img {
-  width: 3rem;
-  height: auto;
-}
 .Investor-welcome {
   width: 100%;
   height: auto;
