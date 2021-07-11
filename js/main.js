@@ -1,3 +1,14 @@
+// LINK FOR LOGO
+document.getElementById("access").addEventListener("click", Access);
+function Access(event) {
+  event.preventDefault();
+  // GITHUB LINK
+  location.replace("https://heppyandriawan.github.io/Sisaa/get-access.html");
+}
+
+
+// from here up for delete ------------------------------------------------------------------------------------------------
+
 // NAVBAR FIX POSITION
 $(document).ready(function () {
   $(document).scroll(function () {
