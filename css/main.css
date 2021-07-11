@@ -216,6 +216,9 @@
   width: 100%;
   height: auto;
   padding: 0 3rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20%;
 }
 .OurService-content-left-img img {
   width: 100%;
