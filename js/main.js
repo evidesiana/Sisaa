@@ -15,7 +15,6 @@ $(document).ready(function () {
     const header = $("#Heading")[0].scrollHeight;
     const headerHeigh = header - 0;
     const scrollPosition = $(window).scrollTop();
-    console.log(scrollPosition);
     if (scrollPosition >= headerHeigh) {
       $("#Nav").addClass("Navbar-active");
     } else {
