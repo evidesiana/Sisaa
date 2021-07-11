@@ -45,8 +45,8 @@ const preloadImages = () => {
 
 const img = new Image();
 img.src = currentFrame(1);
-canvas.width = 1920;
-canvas.height = 1080;
+canvas.width = 1458;
+canvas.height = 820;
 img.onload = function () {
   context.drawImage(img, 0, 0);
 };
@@ -113,4 +113,19 @@ document.getElementById("arrow").addEventListener("click", scrollTop);
 function scrollTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+// GET ACCESS FORM OPEN BUTTON / INVESTOR PAGE
+document.getElementById("GetAccess-btn").addEventListener("click", displayBlock);
+function displayBlock() {
+
+  $("#Investor").addClass("display-hide");
+  $("#GetAccess").addClass("display-block");
+}
+
+// GET ACCESS FORM CLOSE BUTTON / INVESTOR PAGE
+document.getElementById("GetAccess-btn").addEventListener("click", displayhide);
+function displayhide() {
+
+  $("#Investor").removeClass("display-hide");
+  $("#GetAccess").removeClass("display-block");
 }

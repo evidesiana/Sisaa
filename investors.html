@@ -36,10 +36,11 @@
                         <li><a href="#ContactUs">Contact</a></li>
                     </ul>
                     <ul class="NavBar-list-investor">
-                        <li><a href="/Sisaa/investors.html">INVESTORS</a></li>
                         <!-- <li><a href="/investors.html">INVESTORS</a></li> -->
+                        <li><a href="/Sisaa/investors.html">INVESTORS</a></li>
                         <span> | </span>
-                        <li><a href="">GET ACCESS</a></li>
+                        <!-- <li><a href="/get_access.html">GET ACCESS</a></li> -->
+                        <li><a href="Sisaa/get_access.html">GET ACCESS</a></li>
                     </ul>
                 </div>
             </div>
@@ -67,7 +68,39 @@
                 </div>
                 <div class="Investor-getAccess">
                     <h1>Register now for access to the investors data room</h1>
-                    <button><span>Get access</span></button>
+                    <button id="GetAccess-btn" onclick="return displayBlock();"><span>Get access</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="GetAccess">
+        <div class="GetAccess-container">
+            <div class="GetAccess-wrap">
+                <div class="GetAccess-title">
+                    <h2>Register now for <span>access to</span></h2>
+                    <h2><span>the investors</span> data room</h2>
+                </div>
+                <form action="" method="get" class="GetAccess-form">
+                    <div class="GetAccess-form-list">
+                        <div class="GetAccess-content">
+                            <input type="text" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="GetAccess-content">
+                            <input type="text" name="company" placeholder="Company" required>
+                        </div>
+                        <div class="GetAccess-content">
+                            <input type="email" name="email" placeholder="Email Address" required>
+                        </div>
+                    </div>
+                    <div class="GetAccess-btn">
+                        <button type="submit"><span>Get access</span></button>
+                        <span>OR</span>
+                        <button><a href="https://services.intralinks.com/logon/v3/index.html?clientID=744da155-ac5c-4b79-83e1-948c05096422" target="_blank">Enter data room</a></button>
+                    </div>
+                </form>
+
+                <div class="GetAccess-exit">
+                    <div class="GetAccess-exit-btn" onclick="return displayhide();"><i class="fas fa-sign-out-alt"></i><span>Back</span></div>
                 </div>
             </div>
         </div>

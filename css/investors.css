@@ -4,6 +4,12 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+.display-hide {
+  display: none !important;
+}
+.display-block {
+  display: block !important;
+}
 title img {
   width: 3rem;
   height: 3rem;
@@ -266,4 +272,143 @@ title img {
   100% {
     background-position: 0%;
   }
+}
+
+/* GET ACCESS FORM */
+#GetAccess {
+  width: 100%;
+  height: auto;
+  padding: 0 5%;
+  display: none;
+}
+.GetAccess {
+  width: 100%;
+  height: auto;
+  padding: 0 5%;
+}
+.GetAccess-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.GetAccess-wrap {
+  width: auto;
+  height: 50%;
+  padding: 3rem;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -40%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.GetAccess-title {
+  width: 100%;
+  height: auto;
+  margin-bottom: 3rem;
+}
+.GetAccess-title h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.GetAccess-title h2 span {
+  background: linear-gradient(
+    90deg,
+    #ab6bff,
+    #9ad5f9 15%,
+    #575df0 35%,
+    #ab6bff 50%,
+    #9ad5f9 65%,
+    #575df0 85%,
+    #ab6bff
+  );
+  background-size: 400%;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: textcolor 10s linear infinite;
+}
+.GetAccess-form {
+  width: 100%;
+  height: auto;
+}
+
+.GetAccess-form-list {
+  width: 100%;
+  height: auto;
+}
+.GetAccess-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.GetAccess-content input {
+  font-size: 1rem;
+  font-weight: 200;
+  border: 2px solid rgb(163, 163, 163);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  box-sizing: border-box;
+}
+.GetAccess-content input:focus {
+  font-size: 1rem;
+  font-weight: 200;
+  outline: none !important;
+  border: 2px solid rgb(163, 163, 163);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  box-shadow: none;
+  background-color: rgb(255, 255, 255);
+}
+.GetAccess-btn {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.GetAccess-btn button {
+  padding: 0.6rem 2rem;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 0.3rem;
+}
+.GetAccess-btn button span {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.GetAccess-btn a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.GetAccess-btn button {
+  margin: 0 1rem;
+}
+.GetAccess-exit{
+  width: 100%;
+  height: 3rem;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.GetAccess-exit-btn{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.GetAccess-exit-btn i{
+  transform: scaleX(-1);
+  margin-right: .5rem;
 }
