@@ -268,6 +268,10 @@
   width: 100%;
   height: auto;
   margin-top: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 25%;
+  text-align: center;
 }
 .OurService-content-right-btn button{
   padding: .5rem 2rem;
