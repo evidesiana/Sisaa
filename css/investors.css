@@ -152,6 +152,8 @@ title img {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  letter-spacing: 0.0075rem;
+  background-origin: content-box;
   animation: textcolor 10s linear infinite;
 }
 .Investor-login {
@@ -195,6 +197,8 @@ title img {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  letter-spacing: 0.0075rem;
+  background-origin: content-box;
   animation: textcolor 10s linear infinite;
 }
 .Investor-or {
@@ -254,6 +258,8 @@ title img {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  letter-spacing: 0.0075rem;
+  background-origin: content-box;
   animation: textcolor 10s linear infinite;
 }
 
@@ -321,6 +327,8 @@ title img {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  letter-spacing: 0.0075rem;
+  background-origin: content-box;
   animation: textcolor 10s linear infinite;
 }
 .GetAccess-form {
