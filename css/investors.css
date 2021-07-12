@@ -328,6 +328,7 @@ title img {
   background-clip: text;
   -webkit-background-clip: text;
   letter-spacing: 0.0075rem;
+  line-height: 0.0075rem;
   background-origin: content-box;
   animation: textcolor 10s linear infinite;
 }
