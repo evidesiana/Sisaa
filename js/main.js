@@ -1,14 +1,3 @@
-// // LINK FOR LOGO
-// document.getElementById("access").addEventListener("click", Access);
-// function Access(event) {
-//   event.preventDefault();
-//   // GITHUB LINK
-//   location.replace("https://heppyandriawan.github.io/Sisaa/get-access.html");
-// }
-
-
-// from here up for delete ------------------------------------------------------------------------------------------------
-
 // NAVBAR FIX POSITION
 $(document).ready(function () {
   $(document).scroll(function () {
@@ -29,9 +18,6 @@ function PageOne(event) {
   event.preventDefault();
   // ORIGINAL LINK
   location.replace("./index.html");
-
-  // GITHUB LINK
-  // location.replace("/Sisaa");
 }
 
 // BACKGROUND SCROLL 3D
@@ -43,9 +29,6 @@ const frameCount = 148;
 const currentFrame = (index) =>
   // ORIGINAL LINK
   `./asset/images/3D/${index.toString().padStart(4, "0")}.jpg`;
-  
-  // GITHUB LINK
-  // `/Sisaa/asset/images/3D/${index.toString().padStart(4, "0")}.jpg`;
 const preloadImages = () => {
   for (let i = 1; i < frameCount; i++) {
     const img = new Image();
