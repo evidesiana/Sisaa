@@ -1,13 +1,32 @@
 // NAVBAR FIX POSITION
+var num = 50; //number of pixels before modifying styles
+
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > num) {
+      $("#Nav").addClass("Navbar-active");
+    } else {
+      $("#Nav").removeClass("Navbar-active");
+    }
+});
+
+// NAVBAR CHANGES COLOR POSITION
 $(document).ready(function () {
   $(document).scroll(function () {
     const header = $("#Heading")[0].scrollHeight;
     const headerHeigh = header - 0;
     const scrollPosition = $(window).scrollTop();
     if (scrollPosition >= headerHeigh) {
-      $("#Nav").addClass("Navbar-active");
-    } else {
       $("#Nav").removeClass("Navbar-active");
+      $("#Nav").addClass("Navbar-active-colored");
+      $("#logo").attr("src","./asset/images/SISAA LOGO.png");
+      $("#Nav-black-first").addClass("Nav-white");
+      $("#Nav-black-second").addClass("Nav-white");
+    } else {
+      $("#Nav").removeClass("Navbar-active-colored");
+      $("#Nav").addClass("Navbar-active");
+      $("#logo").attr("src","./asset/images/sissa-logo-full.png");
+      $("#Nav-black-first").removeClass("Nav-white");
+      $("#Nav-black-second").removeClass("Nav-white");
     }
   });
 });
@@ -19,6 +38,29 @@ function PageOne(event) {
   // ORIGINAL LINK
   location.replace("./index.html");
 }
+
+// RESIZE WIDTH DIV HOME COMPONENT
+$(window).resize(function() {
+  $('#homeLeft').css({
+      top: ($(window).height() - $('#homeLeft').outerHeight()) / 2
+  });
+});
+
+// To initially run the function:
+$(window).resize();
+
+
+var $scrollingDiv = $("#homeLeft");
+$(window).scroll(function() {
+  var winScrollTop = $(window).scrollTop() + 0,
+      baseScroll = $(".Header-container").height() / 7,
+      zeroSizeHeight = ($(".Header-container").height() - $(window).height() - baseScroll),
+      newSize = `${100 * (1 - (winScrollTop / zeroSizeHeight))}%`;
+  
+  $scrollingDiv.css({
+      width: newSize,
+  }, 500, 'easeInOutSine');
+});
 
 // BACKGROUND SCROLL 3D
 const html = document.documentElement;
@@ -107,18 +149,12 @@ function scrollTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-// GET ACCESS FORM OPEN BUTTON / INVESTOR PAGE
-document.getElementById("GetAccess-btn").addEventListener("click", displayBlock);
-function displayBlock() {
 
-  $("#Investor").addClass("display-hide");
-  $("#GetAccess").addClass("display-block");
-}
 
-// GET ACCESS FORM CLOSE BUTTON / INVESTOR PAGE
-document.getElementById("GetAccess-btn").addEventListener("click", displayhide);
-function displayhide() {
 
-  $("#Investor").removeClass("display-hide");
-  $("#GetAccess").removeClass("display-block");
+// LINK FOR LOGO
+document.getElementById("GetAccess-btn").addEventListener("click", getaccess);
+function getaccess() {
+  // ORIGINAL LINK
+  location.replace("./get-access.html");
 }

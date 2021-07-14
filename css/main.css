@@ -9,7 +9,7 @@
 #Nav {
   width: 100%;
   height: fit-content;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 5;
@@ -58,7 +58,16 @@
 .NavBar-list-menu li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-weight: 200;
+  font-weight: 300;
+}
+.NavBar-list-menu #Nav-black-first a{
+  color: #000000;
+}
+.NavBar-list-menu #Nav-black-second a{
+  color: #000000;
+}
+.NavBar-list-menu .Nav-white a{
+  color: #ffffff !important;
 }
 .NavBar-list-investor {
   width: 15rem;
@@ -79,89 +88,138 @@
   margin: 0 1rem;
 }
 .Navbar-active {
-  background-color: rgb(0, 0, 0);
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 100;
+}
+.Navbar-active-colored {
+  background-color: #008bcb;
   color: rgb(255, 255, 255);
-  position: sticky !important;
-  position: -webkit-sticky !important;
+  position: fixed !important;
   top: 0 !important;
   left: 0 !important;
   z-index: 100;
 }
 
 /* Heading sections */
-#Heading {
+.Header-container {
   width: 100%;
   height: 300vh;
-  display: flex;
-  flex-direction: row;
   position: relative;
 }
-.Heading-text {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
-.Heading-text-wrap {
-  width: 35%;
-  height: auto;
-  position: absolute;
-  top: 12%;
-  left: 5%;
-  transform: translate(12%);
-}
-.Heading-text-header {
-  margin-bottom: 2rem;
-}
-.Heading-text-header h1 {
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.2;
-  color: rgb(255, 255, 255);
-}
-.Heading-text-wrap p {
-  margin-bottom: 2rem;
-  color: rgb(255, 255, 255);
-}
-.Heading-text-wrap-btm {
-  width: 35%;
-  height: auto;
-  position: absolute;
-  top: 80%;
-  left: 10%;
-  transform: translate(0%, -80%);
-}
-.Heading-text-wrap-btm p {
-  font-size: 1rem;
-  font-weight: 200;
-  text-align: justify;
-  color: rgb(0, 0, 0);
-}
 
-/* Heading animation sections */
-.Heading-animation {
+.Header-home-container {
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: row;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  z-index: -1;
+}
+.Header-home-left {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+.Header-home-left-wrap {
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.Header-home-left-container {
+  width: 100%;
+  height: 100%;
+  padding: 0 5%;
+  position: relative;
   overflow: hidden;
 }
-.Heading-animation-wrap {
+.Header-home-left-title-wrap {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(0%, -50%);
+  overflow: hidden;
+  z-index: 1;
+}
+.Header-home-left-title-content {
+  width: 100%;
+  height: auto;
+}
+.Header-home-left-title-top h1 {
+  font-size: 2.3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #008bcb;
+}
+
+.Header-home-left-title-btm {
+  width: 60%;
+  height: auto;
+  margin-top: 2rem;
+}
+.Header-home-left-title-btm p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  color: #2e3032;
+}
+.Header-home-left-arrow-wrap {
+  width: 8%;
+  height: 100vh;
+  position: relative;
+}
+.Header-home-left-arrow-content {
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  border-left: 1px solid #2e3032;
+  padding-left: 0.5rem;
+  padding-bottom: 2rem;
+}
+.Header-home-left-arrow-content span {
+  font-size: 0.7rem;
+  writing-mode: vertical-rl;
+  color: #2e3032;
+}
+.Header-home-right {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: static;
+  position: -webkit-sticky;
+  top: 0;
+  left: 0;
+}
+.Header-home-right-image {
+  width: 100%;
+  height: auto;
+}
+.Header-home-right-image-wrap {
   width: 100%;
   height: 100vh;
   position: relative;
   overflow: hidden;
 }
-.Heading-animation-wrap canvas {
+.Header-home-right-image-wrap canvas {
   width: 100vw;
   height: 100vh;
   position: absolute;
   top: 0;
   right: 0;
 }
+
 
 /* Our Service Sections */
 #OurService {
@@ -182,23 +240,7 @@
 .OurService-header h1 {
   font-size: 2.5rem;
   font-weight: 400;
-  background: linear-gradient(
-    90deg,
-    #ab6bff,
-    #9ad5f9 15%,
-    #575df0 35%,
-    #ab6bff 50%,
-    #9ad5f9 65%,
-    #575df0 85%,
-    #ab6bff
-  );
-  background-size: 400%;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  letter-spacing: 0.0075rem;
-  background-origin: content-box;
-  animation: textcolor 10s linear infinite;
+  color: #008bcb;
 }
 .OurService-content {
   width: 100%;
@@ -278,7 +320,7 @@
 .OurService-content-right-btn button{
   padding: .5rem 2rem;
   border: none;
-  background-color: black;
+  background-color: #008bcb;
   color: rgb(255, 255, 255);
 }
 
@@ -338,23 +380,7 @@
 .Platform-header-container h1 {
   font-size: 2.5rem;
   font-weight: 400;
-  background: linear-gradient(
-    90deg,
-    #ab6bff,
-    #9ad5f9 15%,
-    #575df0 35%,
-    #ab6bff 50%,
-    #9ad5f9 65%,
-    #575df0 85%,
-    #ab6bff
-  );
-  background-size: 400%;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  letter-spacing: 0.0075rem;
-  background-origin: content-box;
-  animation: textcolor 10s linear infinite;
+  color: #008bcb;
 }
 .Platform-header-container h2 {
   font-size: 1rem;
@@ -364,7 +390,7 @@
 .Platform-header-container button {
   padding: .5rem 2rem;
   border: none;
-  background-color: black;
+  background-color: #008bcb;
   color: rgb(255, 255, 255);
   margin-top: 2rem;
 }
@@ -423,23 +449,7 @@
 .AboutUs-header h1 {
   font-size: 2.5rem;
   font-weight: 400;
-  background: linear-gradient(
-    90deg,
-    #ab6bff,
-    #9ad5f9 15%,
-    #575df0 35%,
-    #ab6bff 50%,
-    #9ad5f9 65%,
-    #575df0 85%,
-    #ab6bff
-  );
-  background-size: 400%;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  letter-spacing: 0.0075rem;
-  background-origin: content-box;
-  animation: textcolor 10s linear infinite;
+  color: #008bcb;
 }
 
 .AboutUs-map {
@@ -505,23 +515,7 @@
   font-size: 2.5rem;
   font-weight: 400;
   line-height: 1.2;
-  background: linear-gradient(
-    90deg,
-    #ab6bff,
-    #9ad5f9 15%,
-    #575df0 35%,
-    #ab6bff 50%,
-    #9ad5f9 65%,
-    #575df0 85%,
-    #ab6bff
-  );
-  background-size: 400%;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  letter-spacing: 0.0075rem;
-  background-origin: content-box;
-  animation: textcolor 10s linear infinite;
+  color: #008bcb;
 }
 
 @keyframes textcolor {
@@ -630,7 +624,7 @@
 .ContactUs-form-btn button {
   padding: 0.5rem 5rem;
   border: none;
-  background-color: rgb(0, 0, 0);
+  background-color: #008bcb;
   color: rgb(255, 255, 255);
   border-radius: 0.3rem;
 }
@@ -639,7 +633,7 @@
 #footer {
   width: 100%;
   height: auto;
-  background-color: rgb(0, 0, 0);
+  background-color: #008bcb;
   color: rgb(255, 255, 255);
   padding: 1.5rem 5%;
   margin-top: 5rem;
@@ -709,23 +703,7 @@
 }
 .footer-menu-arrow span {
   cursor: pointer;
-  background: linear-gradient(
-    90deg,
-    #ab6bff,
-    #9ad5f9 15%,
-    #575df0 35%,
-    #ab6bff 50%,
-    #9ad5f9 65%,
-    #575df0 85%,
-    #ab6bff
-  );
-  background-size: 400%;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  letter-spacing: 0.0075rem;
-  background-origin: content-box;
-  animation: textcolor 10s linear infinite;
+  color: #ffffff;
 }
 .footer-info {
   width: 100%;
