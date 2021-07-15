@@ -496,9 +496,12 @@
 .AboutUs-map {
   width: 100%;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .AboutUs-map img {
-  width: 100%;
+  width: 70%;
   height: auto;
 }
 .AboutUs-company {
