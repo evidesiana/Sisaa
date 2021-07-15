@@ -36,7 +36,7 @@ $(document).ready(function () {
       $(".NavBar-list-container ul li a").addClass("Navbar-scroled-section");
       $(".NavBar-list-container ul span").addClass("Navbar-scroled-section");
       $("#Header-text").removeClass("display-none");
-      $("#Header-text").addClass("Header-home-right-text");
+      $("#Header-text").addClass("Header-home-right-text-wrap");
       $(".NavBar-list-container ul li a").removeClass("Navbar-scroled");
     } else {
       $("#Nav").removeClass("Navbar-active-colored");
