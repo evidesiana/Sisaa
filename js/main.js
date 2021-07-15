@@ -34,13 +34,15 @@ $(document).ready(function () {
       $("#Nav").addClass("Navbar-active-colored");
       $(".NavBar-list-container ul li a").addClass("Navbar-scroled-section");
       $(".NavBar-list-container ul span").addClass("Navbar-scroled-section");
-      $(".Header-home-right-text").addClass("display-block");
+      $("#Header-text").removeClass("display-none");
+      $("#Header-text").addClass("Header-home-right-text");
       $(".NavBar-list-container ul li a").removeClass("Navbar-scroled");
     } else {
       $("#Nav").removeClass("Navbar-active-colored");
       $(".NavBar-list-container ul li a").removeClass("Navbar-scroled-section");
       $(".NavBar-list-container ul span").removeClass("Navbar-scroled-section");
-      $(".Header-home-right-text").removeClass("display-block");
+      $("#Header-text").addClass("display-none");
+      $("#Header-text").removeClass("Header-home-right-text");
       $(".NavBar-list-container ul li a").addClass("Navbar-scroled");
     }
   });
