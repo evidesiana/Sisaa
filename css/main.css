@@ -69,6 +69,7 @@
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-weight: 300;
+  cursor: pointer;
 }
 
 .NavBar-list-menu .Nav-white a {

@@ -9,6 +9,30 @@ $(window).bind('scroll', function () {
     }
 });
 
+// MENU BUTTON
+$("#OurService-btn").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#OurService").offset().top
+  }, 2000);
+});
+$("#Platform-btn").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#Platform").offset().top
+  }, 2000);
+});
+$("#AboutUs-btn").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#AboutUs").offset().top
+  }, 2000);
+});
+$("#ContactUs-btn").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#ContactUs").offset().top
+  }, 2000);
+});
+
+
+
 // NAVBAR CHANGES COLOR
 var num = 200; //number of pixels before modifying styles
 
@@ -50,8 +74,8 @@ $(document).ready(function () {
 });
 
 // LINK FOR LOGO
-document.getElementById("logo").addEventListener("click", PageOne);
-function PageOne(event) {
+document.getElementById("logo").addEventListener("click", Home);
+function Home(event) {
   event.preventDefault();
   // ORIGINAL LINK
   location.replace("./index.html");
@@ -160,12 +184,3 @@ if (typeof myVideo.loop == "boolean") {
   );
 }
 myVideo.play();
-
-
-
-// LINK FOR LOGO
-document.getElementById("GetAccess-btn").addEventListener("click", getaccess);
-function getaccess() {
-  // ORIGINAL LINK
-  location.replace("./get-access.html");
-}
