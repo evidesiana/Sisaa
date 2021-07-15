@@ -107,7 +107,7 @@
   z-index: 100;
 }
 .Navbar-active-colored {
-  background-color: #adadad;
+  background-color: #adadad88;
   color: rgb(255, 255, 255);
   position: fixed !important;
   top: 0 !important;
@@ -338,7 +338,7 @@
   height: 100vh;
   position: sticky;
   position: -webkit-sticky;
-  top: 5%;
+  top: 0;
   opacity: 0.9;
   overflow: hidden;
 }
