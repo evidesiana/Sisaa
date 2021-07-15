@@ -26,9 +26,10 @@ $(window).bind('scroll', function () {
 $(document).ready(function () {
   $(document).scroll(function () {
     const header = $("#Heading")[0].scrollHeight;
-    const navtriger = header / 5; //total header height / 4
+    const navtriger = header / 4; //total header height / 4
     const navStart = header - navtriger;
-    const headerHeigh = header - navStart + 1000;
+    const headerHeigh = window.innerHeight <= 698 ? header - navStart + 1000 : header - navStart + 1400;
+    console.log(headerHeigh);
     const scrollPosition = $(window).scrollTop();
     if (scrollPosition >= headerHeigh) {
       $("#Nav").addClass("Navbar-active-colored");
