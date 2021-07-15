@@ -28,7 +28,7 @@
   align-items: center;
 }
 .NavBar-logo {
-  width: auto;
+  width: 100%;
   height: auto;
   display: flex;
   align-items: center;
@@ -39,11 +39,19 @@
   cursor: pointer;
 }
 .NavBar-list {
-  width: 66%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.NavBar-list-container {
+  width: 90%;
+  height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .NavBar-list-menu {
   width: 50%;
@@ -54,23 +62,20 @@
   list-style: none;
   list-style-type: none;
   color: rgb(255, 255, 255);
+  margin-right: 4rem;
 }
 .NavBar-list-menu li a {
+  font-size: 0.8rem;
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-weight: 300;
 }
-.NavBar-list-menu #Nav-black-first a{
-  color: #000000;
-}
-.NavBar-list-menu #Nav-black-second a{
-  color: #000000;
-}
-.NavBar-list-menu .Nav-white a{
+
+.NavBar-list-menu .Nav-white a {
   color: #ffffff !important;
 }
 .NavBar-list-investor {
-  width: 15rem;
+  width: 12rem;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -80,12 +85,20 @@
   color: rgb(255, 255, 255);
 }
 .NavBar-list-investor li a {
+  font-size: 0.8rem;
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-weight: 500;
 }
 .NavBar-list-investor span {
   margin: 0 1rem;
+}
+.Navbar-scroled {
+  color: rgb(0, 0, 0) !important;
+}
+.Navbar-scroled-section {
+  color: rgb(255, 255, 255) !important;
+  transition: 0.5s;
 }
 .Navbar-active {
   position: fixed !important;
@@ -94,12 +107,13 @@
   z-index: 100;
 }
 .Navbar-active-colored {
-  background-color: #008bcb;
+  background-color: #adadad;
   color: rgb(255, 255, 255);
   position: fixed !important;
   top: 0 !important;
   left: 0 !important;
   z-index: 100;
+  transition: 0.5s;
 }
 
 /* Heading sections */
@@ -146,9 +160,9 @@
 .Header-home-left-title-wrap {
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 20%;
-  transform: translate(0%, -50%);
+  transform: translate(0%, -55%);
   overflow: hidden;
   z-index: 1;
 }
@@ -174,25 +188,7 @@
   font-weight: 200;
   color: #2e3032;
 }
-.Header-home-left-arrow-wrap {
-  width: 8%;
-  height: 100vh;
-  position: relative;
-}
-.Header-home-left-arrow-content {
-  width: auto;
-  height: auto;
-  position: absolute;
-  bottom: 0;
-  border-left: 1px solid #2e3032;
-  padding-left: 0.5rem;
-  padding-bottom: 2rem;
-}
-.Header-home-left-arrow-content span {
-  font-size: 0.7rem;
-  writing-mode: vertical-rl;
-  color: #2e3032;
-}
+
 .Header-home-right {
   width: 100%;
   height: 100vh;
@@ -220,7 +216,6 @@
   top: 0;
   right: 0;
 }
-
 
 /* Our Service Sections */
 #OurService {
@@ -309,7 +304,7 @@
   font-size: 1rem;
   font-weight: 200;
 }
-.OurService-content-right-btn{
+.OurService-content-right-btn {
   width: 100%;
   height: auto;
   margin-top: 1rem;
@@ -318,14 +313,14 @@
   top: 25%;
   text-align: center;
 }
-.OurService-content-right-btn button{
-  padding: .5rem 2rem;
+.OurService-content-right-btn button {
+  padding: 0.5rem 2rem;
   border: none;
   background-color: #008bcb;
   color: rgb(255, 255, 255);
 }
 
-.OurService-content-right-btn button a{
+.OurService-content-right-btn button a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
@@ -348,8 +343,8 @@
   overflow: hidden;
 }
 .Platform-background #Bg {
-  min-width: 100%; 
-  min-height: 100%; 
+  min-width: 100%;
+  min-height: 100%;
   width: 100vw;
   height: 100vh;
   object-fit: cover;
@@ -391,13 +386,13 @@
   margin-top: 1rem;
 }
 .Platform-header-container button {
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   border: none;
   background-color: #008bcb;
   color: rgb(255, 255, 255);
   margin-top: 2rem;
 }
-.Platform-header-container button a{
+.Platform-header-container button a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
@@ -636,7 +631,7 @@
 #footer {
   width: 100%;
   height: auto;
-  background-color: #008bcb;
+  background-color: #adadad;
   color: rgb(255, 255, 255);
   padding: 1.5rem 5%;
   margin-top: 5rem;
@@ -680,34 +675,23 @@
   margin-right: 1rem;
 }
 
-.footer-menu-arrow {
-  width: 5rem;
+.footer-menu-list {
+  width: 10rem;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  text-align: left;
+  margin-top: 3.5rem;
 }
-.footer-menu-arrow i {
-  cursor: pointer;
-  font-size: 2rem;
-  animation: pulse 1.5s ease-in-out infinite;
-}
-@keyframes pulse {
-  0% {
-    margin-top: 1rem;
-  }
-  50% {
-    margin-top: 0rem;
-  }
-  100% {
-    margin-top: 1rem;
-  }
-}
-.footer-menu-arrow span {
-  cursor: pointer;
+.footer-menu-list a {
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-decoration: none;
   color: #ffffff;
+  margin-bottom: .5rem;
 }
+
 .footer-info {
   width: 100%;
   height: auto;

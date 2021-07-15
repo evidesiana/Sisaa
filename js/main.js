@@ -9,24 +9,35 @@ $(window).bind('scroll', function () {
     }
 });
 
-// NAVBAR CHANGES COLOR POSITION
+// NAVBAR CHANGES COLOR
+var num = 200; //number of pixels before modifying styles
+
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > num) {
+      $(".NavBar-list-container ul li a").addClass("Navbar-scroled");
+      $(".NavBar-list-container ul span").addClass("Navbar-scroled");
+    } else {
+      $(".NavBar-list-container ul li a").removeClass("Navbar-scroled");
+      $(".NavBar-list-container ul span").removeClass("Navbar-scroled");
+    }
+});
+
+// NAVBAR CONTAINER CHANGES COLOR POSITION
 $(document).ready(function () {
   $(document).scroll(function () {
     const header = $("#Heading")[0].scrollHeight;
     const headerHeigh = header - 0;
     const scrollPosition = $(window).scrollTop();
     if (scrollPosition >= headerHeigh) {
-      $("#Nav").removeClass("Navbar-active");
       $("#Nav").addClass("Navbar-active-colored");
-      $("#logo").attr("src","./asset/images/SISAA LOGO.png");
-      $("#Nav-black-first").addClass("Nav-white");
-      $("#Nav-black-second").addClass("Nav-white");
+      $(".NavBar-list-container ul li a").addClass("Navbar-scroled-section");
+      $(".NavBar-list-container ul span").addClass("Navbar-scroled-section");
+      $(".NavBar-list-container ul li a").removeClass("Navbar-scroled");
     } else {
       $("#Nav").removeClass("Navbar-active-colored");
-      $("#Nav").addClass("Navbar-active");
-      $("#logo").attr("src","./asset/images/sissa-logo-full.png");
-      $("#Nav-black-first").removeClass("Nav-white");
-      $("#Nav-black-second").removeClass("Nav-white");
+      $(".NavBar-list-container ul li a").removeClass("Navbar-scroled-section");
+      $(".NavBar-list-container ul span").removeClass("Navbar-scroled-section");
+      $(".NavBar-list-container ul li a").addClass("Navbar-scroled");
     }
   });
 });
@@ -142,13 +153,6 @@ if (typeof myVideo.loop == "boolean") {
   );
 }
 myVideo.play();
-
-// FOOTER BACK TOP BUTTON
-document.getElementById("arrow").addEventListener("click", scrollTop);
-function scrollTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
 
 
 
