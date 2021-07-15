@@ -201,6 +201,7 @@
 .Header-home-right-image {
   width: 100%;
   height: auto;
+  position: relative;
 }
 .Header-home-right-image-wrap {
   width: 100%;
