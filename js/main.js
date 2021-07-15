@@ -26,19 +26,21 @@ $(window).bind('scroll', function () {
 $(document).ready(function () {
   $(document).scroll(function () {
     const header = $("#Heading")[0].scrollHeight;
-    const navtriger = header / 4; //total header height / 4
+    const navtriger = header / 5; //total header height / 4
     const navStart = header - navtriger;
-    const headerHeigh = header - navStart + 300;
+    const headerHeigh = header - navStart + 1000;
     const scrollPosition = $(window).scrollTop();
     if (scrollPosition >= headerHeigh) {
       $("#Nav").addClass("Navbar-active-colored");
       $(".NavBar-list-container ul li a").addClass("Navbar-scroled-section");
       $(".NavBar-list-container ul span").addClass("Navbar-scroled-section");
+      $(".Header-home-right-text").addClass("display-block");
       $(".NavBar-list-container ul li a").removeClass("Navbar-scroled");
     } else {
       $("#Nav").removeClass("Navbar-active-colored");
       $(".NavBar-list-container ul li a").removeClass("Navbar-scroled-section");
       $(".NavBar-list-container ul span").removeClass("Navbar-scroled-section");
+      $(".Header-home-right-text").removeClass("display-block");
       $(".NavBar-list-container ul li a").addClass("Navbar-scroled");
     }
   });
