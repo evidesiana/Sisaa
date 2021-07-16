@@ -55,6 +55,7 @@
   }
   .NavBar-mobile {
     display: block;
+    z-index: 100;
   }
   .NavBar-mobile-container {
     width: 100%;
@@ -79,7 +80,7 @@
     height: auto;
     display: flex;
     align-items: center;
-    margin-top: 1.5rem;
+    margin-top: .5rem;
     z-index: 5;
   }
   .NavBar-mobile-logo img {
@@ -91,7 +92,7 @@
     width: 100%;
     height: auto;
     position: relative;
-    margin-top: 1.5rem;
+    margin-top: .5rem;
     z-index: 5;
   }
   .NavBar-mobile-lines {
@@ -102,6 +103,8 @@
     justify-content: space-between;
     float: right;
     cursor: pointer;
+    padding: 1rem;
+    padding-right: 0;
   }
   .NavBar-mobile-lines i {
     font-size: 1.3rem;
