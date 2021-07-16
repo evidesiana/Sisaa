@@ -52,6 +52,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   position: absolute;
   top: 0;
   right: 0;
@@ -182,7 +183,7 @@
 }
 
 .Header-home-left-title-btm {
-  width: 60%;
+  width: 61%;
   height: auto;
   margin-top: 2rem;
 }
@@ -191,6 +192,7 @@
   font-size: 1rem;
   font-weight: 200;
   color: #2e3032;
+  text-align: justify;
 }
 
 .Header-home-right {
@@ -375,7 +377,7 @@
 /* Our Platform Sections */
 #Platform {
   width: 100%;
-  height: 255vh;
+  height: 200vh;
   position: relative;
   margin-top: 9rem;
   z-index: 0;
@@ -412,11 +414,12 @@
 }
 .Platform-header {
   width: 100%;
-  height: 110vh;
+  height: 65vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 8rem;
 }
 .Platform-header-container {
   width: 55%;
@@ -450,7 +453,7 @@
 }
 .Platform-content-container {
   width: 100%;
-  height: 45vh;
+  height: 20vh;
 }
 .Platform-content-wrap {
   width: 30%;
@@ -480,7 +483,7 @@
   width: 100%;
   height: auto;
   padding: 0 5%;
-  padding-top: 5rem;
+  padding-top: 7rem;
   position: relative;
 }
 .AboutUs-header {
