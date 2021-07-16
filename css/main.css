@@ -14,7 +14,7 @@
   left: 0;
   z-index: 5;
 }
-.NavBar-mobile{
+.NavBar-mobile {
   display: none;
 }
 .NavBar {
@@ -209,7 +209,6 @@
   width: 100%;
   height: auto;
   position: relative;
-  
 }
 .Header-home-right-image-wrap {
   width: 100%;
