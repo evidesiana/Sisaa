@@ -322,7 +322,7 @@
 }
 .OurService-content-right-wrap-top {
   width: 100%;
-  height: 60vh;
+  height: 50vh;
 }
 .OurService-content-right-wrap {
   width: 100%;
@@ -330,11 +330,11 @@
 }
 .OurService-content-right-header {
   width: 80%;
-  height: 6.5rem;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .OurService-content-right-header h1 {
   font-size: 2rem;
