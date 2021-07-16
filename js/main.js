@@ -66,7 +66,6 @@ $(document).ready(function () {
       window.innerHeight <= 698
         ? header - navStart + 1000
         : header - navStart + 1400;
-    console.log(headerHeigh);
     const scrollPosition = $(window).scrollTop();
     if (scrollPosition >= headerHeigh) {
       $("#Nav").addClass("Navbar-active-colored");
