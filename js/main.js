@@ -1,49 +1,59 @@
 // NAVBAR FIX POSITION
 var num = 50; //number of pixels before modifying styles
 
-$(window).bind('scroll', function () {
-    if ($(window).scrollTop() > num) {
-      $("#Nav").addClass("Navbar-active");
-    } else {
-      $("#Nav").removeClass("Navbar-active");
-    }
+$(window).bind("scroll", function () {
+  if ($(window).scrollTop() > num) {
+    $("#Nav").addClass("Navbar-active");
+  } else {
+    $("#Nav").removeClass("Navbar-active");
+  }
 });
 
 // MENU BUTTON
-$("#OurService-btn").click(function() {
-  $('html, body').animate({
-      scrollTop: $("#OurService").offset().top
-  }, 2000);
+$("#OurService-btn").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: $("#OurService").offset().top,
+    },
+    2000
+  );
 });
-$("#Platform-btn").click(function() {
-  $('html, body').animate({
-      scrollTop: $("#Platform").offset().top
-  }, 2000);
+$("#Platform-btn").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: $("#Platform").offset().top,
+    },
+    2000
+  );
 });
-$("#AboutUs-btn").click(function() {
-  $('html, body').animate({
-      scrollTop: $("#AboutUs").offset().top
-  }, 2000);
+$("#AboutUs-btn").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: $("#AboutUs").offset().top,
+    },
+    2000
+  );
 });
-$("#ContactUs-btn").click(function() {
-  $('html, body').animate({
-      scrollTop: $("#ContactUs").offset().top
-  }, 2000);
+$("#ContactUs-btn").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: $("#ContactUs").offset().top,
+    },
+    2000
+  );
 });
-
-
 
 // NAVBAR CHANGES COLOR
 var num = 200; //number of pixels before modifying styles
 
-$(window).bind('scroll', function () {
-    if ($(window).scrollTop() > num) {
-      $(".NavBar-list-container ul li a").addClass("Navbar-scroled");
-      $(".NavBar-list-container ul span").addClass("Navbar-scroled");
-    } else {
-      $(".NavBar-list-container ul li a").removeClass("Navbar-scroled");
-      $(".NavBar-list-container ul span").removeClass("Navbar-scroled");
-    }
+$(window).bind("scroll", function () {
+  if ($(window).scrollTop() > num) {
+    $(".NavBar-list-container ul li a").addClass("Navbar-scroled");
+    $(".NavBar-list-container ul span").addClass("Navbar-scroled");
+  } else {
+    $(".NavBar-list-container ul li a").removeClass("Navbar-scroled");
+    $(".NavBar-list-container ul span").removeClass("Navbar-scroled");
+  }
 });
 
 // NAVBAR CONTAINER CHANGES COLOR POSITION
@@ -52,7 +62,10 @@ $(document).ready(function () {
     const header = $("#Heading")[0].scrollHeight;
     const navtriger = header / 4; //total header height / 4
     const navStart = header - navtriger;
-    const headerHeigh = window.innerHeight <= 698 ? header - navStart + 1000 : header - navStart + 1400;
+    const headerHeigh =
+      window.innerHeight <= 698
+        ? header - navStart + 1000
+        : header - navStart + 1400;
     console.log(headerHeigh);
     const scrollPosition = $(window).scrollTop();
     if (scrollPosition >= headerHeigh) {
@@ -82,26 +95,30 @@ function Home(event) {
 }
 
 // RESIZE WIDTH DIV HOME COMPONENT
-$(window).resize(function() {
-  $('#homeLeft').css({
-      top: ($(window).height() - $('#homeLeft').outerHeight()) / 2
+$(window).resize(function () {
+  $("#homeLeft").css({
+    top: ($(window).height() - $("#homeLeft").outerHeight()) / 2,
   });
 });
 
 // To initially run the function:
 $(window).resize();
 
-
 var $scrollingDiv = $("#homeLeft");
-$(window).scroll(function() {
+$(window).scroll(function () {
   var winScrollTop = $(window).scrollTop() + 0,
-      baseScroll = $(".Header-container").height() / 7,
-      zeroSizeHeight = ($(".Header-container").height() - $(window).height() - baseScroll),
-      newSize = `${100 * (1 - (winScrollTop / zeroSizeHeight))}%`;
-  
-  $scrollingDiv.css({
+    baseScroll = $(".Header-container").height() / 7,
+    zeroSizeHeight =
+      $(".Header-container").height() - $(window).height() - baseScroll,
+    newSize = `${100 * (1 - winScrollTop / zeroSizeHeight)}%`;
+
+  $scrollingDiv.css(
+    {
       width: newSize,
-  }, 500, 'easeInOutSine');
+    },
+    500,
+    "easeInOutSine"
+  );
 });
 
 // BACKGROUND SCROLL 3D
@@ -184,3 +201,21 @@ if (typeof myVideo.loop == "boolean") {
   );
 }
 myVideo.play();
+
+// -------------------Mobile Version---------------------------------
+
+// Navbar appearing
+$(document).ready(function () {
+  $(".NavBar-mobile-lines").click(function () {
+    $("#navbar").toggleClass("NavBar-mobile-show");
+
+    // switch icon
+    if ($("#NavBar-icon").hasClass("fa-bars")) {
+      $("#NavBar-icon").removeClass("fa-bars");
+      $("#NavBar-icon").addClass("fa-sign-out-alt");
+    } else {
+      $("#NavBar-icon").removeClass("fa-sign-out-alt");
+      $("#NavBar-icon").addClass("fa-bars");
+    }
+  });
+});

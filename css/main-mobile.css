@@ -1,0 +1,212 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 280px) and (max-width: 480px) {
+  /* NAVBAR SECTIONS */
+  .NavBar {
+    display: none !important;
+  }
+  .NavBar-mobile {
+    display: block;
+  }
+  .NavBar-mobile-container {
+    width: 100%;
+    height: auto;
+  }
+  .NavBar-mobile-wrap {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .NavBar-mobile-top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+  }
+  .NavBar-mobile-logo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    z-index: 5;
+  }
+  .NavBar-mobile-logo img {
+    width: 6rem;
+    height: 100%;
+    cursor: pointer;
+  }
+  .NavBar-mobile-icon {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 1.5rem;
+    z-index: 5;
+  }
+  .NavBar-mobile-lines {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    float: right;
+    cursor: pointer;
+  }
+  .NavBar-mobile-lines i {
+    font-size: 1.3rem;
+  }
+  .NavBar-mobile-list {
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 5%;
+    padding-top: 7rem;
+    background-color: #818181;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    animation: navHide 0.5s ease-in-out forwards;
+  }
+  .NavBar-mobile-list-container {
+    width: 100%;
+    height: 100%;
+  }
+  .NavBar-mobile-list-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .NavBar-mobile-list-menu {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    padding: 2rem 0;
+  }
+  .NavBar-mobile-list-menu ul li {
+    list-style: none;
+    list-style-type: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .NavBar-mobile-list-menu ul li a {
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: white;
+  }
+  .NavBar-mobile-list-ivestors {
+    width: 100%;
+    height: auto;
+  }
+  .NavBar-mobile-list-ivestors ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .NavBar-mobile-list-ivestors ul li {
+    list-style: none;
+    list-style-type: none;
+    margin-bottom: 1rem;
+  }
+  .NavBar-mobile-list-ivestors ul li a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+  }
+  .NavBar-mobile-list-copyrigh {
+    width: 100%;
+    height: auto;
+  }
+  .NavBar-mobile-list-copyrigh h2 {
+    font-size: 1rem;
+    font-weight: 200;
+    color: white;
+  }
+  .NavBar-mobile-show {
+    animation: navShow 0.5s ease-in-out forwards;
+  }
+  @keyframes navShow {
+    0% {
+      right: -100%;
+    }
+    100% {
+      right: 0;
+    }
+  }
+  @keyframes navHide {
+    0% {
+      right: 0;
+    }
+    100% {
+      right: -100%;
+    }
+  }
+
+  /* HEADING SECTION */
+  .Header-home-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: -1;
+  }
+}
