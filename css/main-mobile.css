@@ -1662,7 +1662,7 @@
     width: 100%;
     height: auto;
     padding: 0 5%;
-    margin-top: 10rem;
+    margin-top: 35%;
     position: unset;
     margin-bottom: 5rem;
   }
@@ -1700,7 +1700,7 @@
     height: auto;
   }
   .Header-home-left-title-top h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.2;
     color: #008bcb;
@@ -1726,7 +1726,7 @@
     position: unset;
     top: unset;
     left: unset;
-    margin-top: 15rem;
+    margin-top: 150%;
     overflow: hidden;
   }
   .Header-home-right-image {
