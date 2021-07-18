@@ -1660,7 +1660,7 @@
   /* HEADING SECTION */
   .Header-container {
     width: 100%;
-    height: auto;
+    height: 270vh;
     padding: 0 5%;
     margin-top: 35%;
     position: unset;
@@ -1669,12 +1669,10 @@
 
   .Header-home-container {
     width: 100%;
-    height: auto;
-    margin-top: 20%;
-
-    display: unset;
-    flex-direction: unset;
-    position: unset;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative !important;
     top: unset;
     z-index: unset;
   }
@@ -1682,6 +1680,7 @@
     width: 90% !important;
     height: auto;
     top: unset !important;
+    margin-bottom: 20%;
   }
   .Header-home-left-wrap {
     width: 100%;
@@ -1722,11 +1721,10 @@
     width: 100%;
     height: auto;
     background-color: unset;
-    position: relative;
-    position: unset;
-    top: unset;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 15%;
     left: unset;
-    margin-top: 150%;
     overflow: hidden;
   }
   .Header-home-right-image {
