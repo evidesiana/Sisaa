@@ -1475,6 +1475,7 @@
 */
 
 @media (min-width: 280px) and (max-width: 480px) {
+ 
   /* NAVBAR SECTIONS */
   .NavBar {
     display: none !important;
@@ -1661,8 +1662,9 @@
     width: 100%;
     height: auto;
     padding: 0 5%;
-    margin-top: 7rem;
+    margin-top: 10rem;
     position: unset;
+    margin-bottom: 5rem;
   }
 
   .Header-home-container {
@@ -1677,7 +1679,7 @@
     z-index: unset;
   }
   .Header-home-left {
-    width: 100% !important;
+    width: 90% !important;
     height: auto;
     top: unset !important;
   }
@@ -1698,7 +1700,7 @@
     height: auto;
   }
   .Header-home-left-title-top h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 400;
     line-height: 1.2;
     color: #008bcb;
@@ -1709,7 +1711,7 @@
   }
   .Header-home-left-title-btm p {
     font-family: "Poppins", sans-serif;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 200;
     color: #2e3032;
     text-align: justify;
@@ -1724,7 +1726,7 @@
     position: unset;
     top: unset;
     left: unset;
-    margin-top: 3rem;
+    margin-top: 15rem;
     overflow: hidden;
   }
   .Header-home-right-image {
@@ -1758,12 +1760,12 @@
     margin-top: 3rem;
   }
   .Header-home-right-text-wrap h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 400;
   }
   .Header-home-right-text-wrap p {
     font-family: "Poppins", sans-serif;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 200;
     color: #2e3032;
     text-align: justify;
@@ -1777,9 +1779,10 @@
     padding: 0 5%;
     position: unset;
     padding-top: 1.5rem;
+    margin-bottom: 5rem;
   }
   .OurService-header h1 {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 400;
     color: #008bcb;
   }
@@ -1834,16 +1837,16 @@
     text-align: justify;
   }
   .OurService-content-right-header h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 400;
   }
   .OurService-content-right-header h2 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 300;
-    margin-top: 1rem;
+    margin-top: .3rem;
   }
   .OurService-content-right-text p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 200;
   }
   .OurService-content-right-wrap {
@@ -1859,6 +1862,7 @@
     height: 100%;
     position: relative;
     margin-top: 3rem;
+    margin-bottom: 10rem;
     z-index: 0;
   }
   .Platform-wrap {
@@ -1884,16 +1888,24 @@
     width: 100%;
     height: auto;
     margin: 0 auto;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
+    text-align: center;
   }
+  .Platform-header-container button {
+    padding: 0.5rem 2rem;
+    border: none;
+    background-color: #008bcb;
+    color: rgb(255, 255, 255);
+    margin-top: 2rem;
+}
   .Platform-header-container h1 {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 400;
     color: #008bcb;
     text-align: center;
   }
   .Platform-header-container h2 {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 200;
     margin-top: 1rem;
     color: #000000;
@@ -1912,13 +1924,13 @@
     margin: 0;
   }
   .Platform-content-wrap h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #000000;
     margin-bottom: 1rem;
   }
   .Platform-content-wrap p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 200;
     margin-bottom: 0;
     color: #000000;
@@ -1956,6 +1968,7 @@
     padding-top: 0;
     position: unset;
     margin-top: 3rem;
+    margin-bottom: 5rem;
   }
   .AboutUs-header {
     width: 100%;
@@ -1966,7 +1979,7 @@
     text-align: center;
   }
   .AboutUs-header h1 {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 400;
     color: #008bcb;
   }
@@ -1988,7 +2001,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 2rem 0;
+    margin: 5rem 0;
     margin-bottom: 0;
   }
   .AboutUs-company-info {
@@ -1996,6 +2009,16 @@
     height: auto;
     margin-bottom: 4rem;
   }
+  .AboutUs-company-info h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.AboutUs-company-info p {
+  font-size: 1rem;
+  font-weight: 200;
+  text-align: justify;
+}
 
   /* CONTACT US SECTION */
   #ContactUs {
@@ -2024,9 +2047,13 @@
   text-align: center;
 }
 .ContactUs-text-wrap h1 {
-  font-size: 1.2rem;
+  font-size: 2rem;
     font-weight: 400;
     color: #008bcb;
+}
+.ContactUs-text-wrap h2 {
+  font-size: .9rem;
+  font-weight: 200;
 }
 .ContactUs-form {
   width: 100%;
@@ -2045,6 +2072,16 @@
 }
 .ContactUs-form-content .input {
   width: 100%;
+}
+.ContactUs-form-item input {
+  font-size: 1rem;
+  font-weight: 200;
+  border: 2px solid rgb(163, 163, 163);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  box-sizing: border-box;
 }
 .ContactUs-form-content .input #email {
   margin-top: 0;
