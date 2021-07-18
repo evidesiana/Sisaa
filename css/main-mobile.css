@@ -1724,7 +1724,7 @@
     background-color: unset;
     position: sticky;
     position: -webkit-sticky;
-    top: 15%;
+    top: 10%;
     left: unset;
     overflow: hidden;
   }
