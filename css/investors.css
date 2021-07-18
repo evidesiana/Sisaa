@@ -190,6 +190,7 @@ title img {
   background-color: #008bcb;
   text-align: center;
   margin: 0 auto;
+  cursor: pointer;
 }
 .Investor-login-btn a {
   font-size: 1rem;
@@ -349,6 +350,7 @@ title img {
 }
 .GetAccess-btn button {
   margin: 0 1rem;
+  cursor: pointer;
 }
 .GetAccess-exit {
   width: 100%;

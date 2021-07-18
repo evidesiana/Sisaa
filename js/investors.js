@@ -1,4 +1,10 @@
-// LINK FOR LOGO
+// LINK FOR get investor
+document.getElementById("GetAccess-btn").addEventListener("click", investor);
+function investor() {
+  // ORIGINAL LINK
+  window.open("https://services.intralinks.com/logon/v3/index.html?clientID=744da155-ac5c-4b79-83e1-948c05096422");
+}
+// LINK FOR get access
 document.getElementById("GetAccess-btn").addEventListener("click", getaccess);
 function getaccess() {
   // ORIGINAL LINK
