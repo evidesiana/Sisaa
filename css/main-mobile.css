@@ -8,6 +8,7 @@
 
 @media (min-width: 1281px) {
   /* CSS */
+  
   .Header-container {
     width: 100%;
     height: 400vh;
@@ -50,6 +51,7 @@
   }
   .Header-home-left-title-wrap {
     width: 100%;
+    height: 40%;
     position: absolute;
     top: 55%;
     left: 20%;
@@ -419,6 +421,7 @@
   }
   .Header-home-left-title-wrap {
     width: 100%;
+    height: 40%;
     position: absolute;
     top: 55%;
     left: 20%;
@@ -1868,6 +1871,9 @@
     top: 10%;
     left: unset;
     overflow: hidden;
+  }
+  .Header-home-right-white-space{
+    display: none;
   }
   .Header-home-right-image {
     width: 100%;
