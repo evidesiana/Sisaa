@@ -1751,13 +1751,12 @@
   .Header-home-right-text {
     all: unset;
   }
-  .Header-home-right-text-wrap {
-    all: unset;
+  #Header-text{
+    margin: 0 5% ;
+    margin-top: 3rem ;
   }
   .display-none {
     display: block;
-    margin: 0 5%;
-    margin-top: 3rem;
   }
   .Header-home-right-text-wrap h1 {
     font-size: 1.5rem;

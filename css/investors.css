@@ -27,6 +27,9 @@ title img {
   left: 0;
   z-index: 5;
 }
+.NavBar-mobile {
+  display: none;
+}
 .NavBar {
   width: 100%;
   height: auto;
