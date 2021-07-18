@@ -3,13 +3,13 @@ document.getElementById("logo").addEventListener("click", Home);
 function Home(event) {
   // ORIGINAL LINK
   location.replace("./index.html");
-}
+};
 // LINK FOR get investor
-document.getElementById("GetAccess-btn").addEventListener("click", investor);
+document.getElementById("investor").addEventListener("click", investor);
 function investor() {
   // ORIGINAL LINK
   window.open("https://services.intralinks.com/logon/v3/index.html?clientID=744da155-ac5c-4b79-83e1-948c05096422");
-}
+};
 
 
 
@@ -17,7 +17,7 @@ function investor() {
 
 // Navbar appearing
 $(document).ready(function () {
-  $(".NavBar-mobile-lines").click(function () {
+  $("#NavBar-mobile-lines").click(function () {
     // $("#navbar").toggleClass("NavBar-mobile-show");
 
     // hide / show navbar
@@ -39,4 +39,38 @@ $(document).ready(function () {
       $("#NavBar-icon").addClass("fa-bars");
     }
   });
+});
+
+// MENU MOBILE BUTTON
+$("#Service-mobile").click(function () {
+  $("#NavBar-icon").removeClass("fa-sign-out-alt");
+  $("#NavBar-icon").addClass("fa-bars");
+  $("#navbar").removeClass("NavBar-mobile-show");
+  $("#navbar").addClass("NavBar-mobile-hide");
+  
+  location.replace("./index.html#OurService");
+});
+$("#Benefit-mobile").click(function () {
+  $("#NavBar-icon").removeClass("fa-sign-out-alt");
+  $("#NavBar-icon").addClass("fa-bars");
+  $("#navbar").removeClass("NavBar-mobile-show");
+  $("#navbar").addClass("NavBar-mobile-hide");
+  
+  location.replace("./index.html#Platform");
+});
+$("#About-mobile").click(function () {
+  $("#NavBar-icon").removeClass("fa-sign-out-alt");
+  $("#NavBar-icon").addClass("fa-bars");
+  $("#navbar").removeClass("NavBar-mobile-show");
+  $("#navbar").addClass("NavBar-mobile-hide");
+  
+  location.replace("./index.html#AboutUs");
+});
+$("#Contact-mobile").click(function () {
+  $("#NavBar-icon").removeClass("fa-sign-out-alt");
+  $("#NavBar-icon").addClass("fa-bars");
+  $("#navbar").removeClass("NavBar-mobile-show");
+  $("#navbar").addClass("NavBar-mobile-hide");
+  
+  location.replace("./index.html#ContactUs");
 });

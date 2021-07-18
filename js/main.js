@@ -88,7 +88,6 @@ $(document).ready(function () {
 // LINK FOR LOGO
 document.getElementById("logo").addEventListener("click", Home);
 function Home(event) {
-  event.preventDefault();
   // ORIGINAL LINK
   location.replace("./index.html");
 }
@@ -227,4 +226,54 @@ $(document).ready(function () {
       $("#NavBar-icon").addClass("fa-bars");
     }
   });
+});
+
+// MENU MOBILE BUTTON
+$("#Service-mobile").click(function () {
+  $("#NavBar-icon").removeClass("fa-sign-out-alt");
+  $("#NavBar-icon").addClass("fa-bars");
+  $("#navbar").removeClass("NavBar-mobile-show");
+  $("#navbar").addClass("NavBar-mobile-hide");
+  $("html, body").animate(
+    {
+      scrollTop: $("#OurService").offset().top,
+    },
+    2000
+  );
+});
+$("#Benefit-mobile").click(function () {
+  $("#NavBar-icon").removeClass("fa-sign-out-alt");
+  $("#NavBar-icon").addClass("fa-bars");
+  $("#navbar").removeClass("NavBar-mobile-show");
+  $("#navbar").addClass("NavBar-mobile-hide");
+  $("html, body").animate(
+    {
+      scrollTop: $("#Platform").offset().top,
+    },
+    2000
+  );
+});
+$("#About-mobile").click(function () {
+  $("#NavBar-icon").removeClass("fa-sign-out-alt");
+  $("#NavBar-icon").addClass("fa-bars");
+  $("#navbar").removeClass("NavBar-mobile-show");
+  $("#navbar").addClass("NavBar-mobile-hide");
+  $("html, body").animate(
+    {
+      scrollTop: $("#AboutUs").offset().top,
+    },
+    2000
+  );
+});
+$("#Contact-mobile").click(function () {
+  $("#NavBar-icon").removeClass("fa-sign-out-alt");
+  $("#NavBar-icon").addClass("fa-bars");
+  $("#navbar").removeClass("NavBar-mobile-show");
+  $("#navbar").addClass("NavBar-mobile-hide");
+  $("html, body").animate(
+    {
+      scrollTop: $("#ContactUs").offset().top,
+    },
+    2000
+  );
 });
