@@ -2094,6 +2094,7 @@
   border-left: none;
   border-right: none;
   border-color: rgb(163, 163, 163);
+  border-radius: 0;
 }
 
   /* FOOTER SECTIONS */
