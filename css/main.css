@@ -125,7 +125,7 @@
 }
 
 /* Heading sections */
-/* .Header-container {
+.Header-container {
   width: 100%;
   height: 400vh;
   position: relative;
@@ -267,7 +267,7 @@
   font-weight: 200;
   margin-bottom: 1rem;
   text-align: justify;
-} */
+}
 
 /* Our Service Sections */
 #OurService {
