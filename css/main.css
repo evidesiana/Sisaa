@@ -17,7 +17,7 @@
   left: 0;
   z-index: 5;
   margin-top: -3rem;
-  animation: slide-down 1s .8s ease-in-out forwards !important;
+  animation: slide-down 1s .8s ease-in-out forwards;
 }
 @keyframes slide-down {
   0% {
@@ -25,7 +25,7 @@
     opacity: 0;
   }
   50% {
-    margin-top: 1rem;
+    margin-top: .5rem;
     opacity: 1;
   }
   100% {

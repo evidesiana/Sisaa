@@ -1621,6 +1621,10 @@
 @media (min-width: 280px) and (max-width: 480px) {
  
   /* NAVBAR SECTIONS */
+  #Nav {
+    animation: none;
+    margin-top: 0;
+  }
   .NavBar {
     display: none !important;
   }
@@ -1848,6 +1852,10 @@
     font-weight: 400;
     line-height: 1.2;
     color: #008bcb;
+    opacity: 1;
+  }
+  .text-appear{
+    animation: none !important;
   }
 
   .Header-home-left-title-btm {
