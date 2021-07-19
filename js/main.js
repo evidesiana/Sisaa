@@ -1,4 +1,5 @@
-// NAVBAR FIX POSITION
+
+// -------------------NAVBAR FIX POSITION---------------------------------
 var num = 50; //number of pixels before modifying styles
 
 $(window).bind("scroll", function () {
@@ -184,6 +185,7 @@ window.onload = function () {
 
 // LOOP GLOBE BACKGROUND
 var myVideo = document.getElementById("Bg");
+myVideo.play();
 if (typeof myVideo.loop == "boolean") {
   // loop supported
   myVideo.loop = true;
@@ -198,7 +200,6 @@ if (typeof myVideo.loop == "boolean") {
     false
   );
 }
-myVideo.play();
 
 // -------------------Mobile Version---------------------------------
 

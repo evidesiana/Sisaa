@@ -8,6 +8,15 @@
   width: device-width;
 }
 
+/* PRELOAD SECTIONS */
+
+.section{
+  display: none !important;
+}
+.section-show{
+  display: unset !important;
+}
+
 /* NavBar section */
 #Nav {
   width: 100%;
