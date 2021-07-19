@@ -478,9 +478,7 @@
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
+    object-position: center right;
     position: absolute;
     top: 0;
     right: 0;
