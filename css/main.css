@@ -258,17 +258,6 @@
   height: 100vh;
   position: relative;
 }
-.Header-home-right-text-wrap {
-  width: 60%;
-  height: auto;
-  margin-left: 5%;
-  position: absolute;
-  top: 55%;
-  left: 0;
-  transform: translate(0%, -55%);
-  z-index: 1;
-  animation: textShow 1s ease-in-out forwards;
-}
 @keyframes textShow {
   0% {
     display: none;
@@ -278,7 +267,13 @@
     display: block;
     opacity: 1;
   }
+}*/
+
+.Header-home-right-text-wrap p {
+  color: #008bcb;
 }
+
+/*
 .display-none {
   display: none;
 }
