@@ -1742,13 +1742,14 @@
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {768
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   /* CSS */
   /* NAVBAR SECTIONS */
   #Nav {
     animation: none;
-    margin-top: 0;
+    margin-top: 0rem;
   }
+
   .NavBar {
     display: none !important;
   }
