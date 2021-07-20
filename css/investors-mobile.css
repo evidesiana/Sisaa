@@ -1,68 +1,148 @@
-
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
 
 @media (min-width: 1281px) {
-  
-    /* CSS */
-    
-  }
-  
-  /* 
+  /* CSS */
+}
+
+/* 
     ##Device = Laptops, Desktops
     ##Screen = B/w 1025px to 1280px
   */
-  
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    
-    /* CSS */
-    
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* CSS */
+  #Nav {
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
   }
-  
-  /* 
+  .NavBar-mobile {
+    display: none;
+  }
+  .NavBar {
+    width: 100%;
+    height: auto;
+    padding: 1rem 5%;
+  }
+  .NavBar-container {
+    height: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .NavBar-logo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  .NavBar-logo img {
+    width: 6rem;
+    height: 100%;
+    cursor: pointer;
+  }
+  .NavBar-list {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  .NavBar-list-container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .NavBar-list-menu {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+    margin-right: 0rem;
+  }
+  .NavBar-list-menu li{
+    margin-right: 1rem;
+  }
+  .NavBar-list-menu li a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    cursor: pointer;
+  }
+
+  .NavBar-list-menu .Nav-white a {
+    color: #ffffff !important;
+  }
+  .NavBar-list-investor {
+    width: 12rem;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+  }
+  .NavBar-list-investor li a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+  }
+  .NavBar-list-investor span {
+    margin: 0 1rem;
+  }
+  .Navbar-scroled {
+    color: rgb(0, 0, 0) !important;
+  }
+  .Navbar-scroled-section {
+    color: rgb(255, 255, 255) !important;
+    transition: 0.5s;
+  }
+  .Navbar-active {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 100;
+  }
+  .Navbar-active-colored {
+    background-color: #81818188;
+    color: rgb(255, 255, 255);
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 100;
+    transition: 0.5s;
+  }
+}
+
+/* 
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
   */
-  
-  @media (min-width: 768px) and (max-width: 1024px) {
-    
-    /* CSS */
-    
-  }
-  
-  /* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-  */
-  
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    
-    /* CSS */
-    
-  }
-  
-  /* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-  
-  @media (min-width: 481px) and (max-width: 767px) {
-    
-    /* CSS */
-    
-  }
-  
-  /* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
-  
-  @media (min-width: 320px) and (max-width: 480px) {
-    
-    /* CSS */
-    /* NAVBAR SECTIONS */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */
+  /* NAVBAR SECTIONS */
   .NavBar {
     display: none !important;
   }
@@ -258,35 +338,35 @@
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}
+  }
   .Investor-welcome h1 {
     font-size: 1.5rem;
     font-weight: 400;
-}
+  }
   .Investor-welcome h2 {
     font-size: 1.5rem;
     font-weight: 400;
-}
-.Investor-login h1 {
-    font-size: .9rem;
+  }
+  .Investor-login h1 {
+    font-size: 0.9rem;
     font-weight: 200;
     margin-bottom: 0.5rem;
-}
-.Investor-login-btn a {
-    font-size: .8rem;
+  }
+  .Investor-login-btn a {
+    font-size: 0.8rem;
     font-weight: 400;
     text-decoration: none;
     color: rgb(255, 255, 255);
-}
-.Investor-login-btn {
+  }
+  .Investor-login-btn {
     width: 100%;
     height: 10%;
     padding: 0.5rem;
     background-color: #008bcb;
     text-align: center;
     margin: 0 auto;
-}
-.Investor-getAccess button {
+  }
+  .Investor-getAccess button {
     width: 100%;
     height: 10%;
     padding: 0.5rem;
@@ -296,21 +376,28 @@
     margin: 0 auto;
     border: none;
     cursor: pointer;
-}
-.Investor-getAccess button span {
-    font-size: .8rem;
+  }
+  .Investor-getAccess button span {
+    font-size: 0.8rem;
     font-weight: 400;
     color: rgb(255, 255, 255);
-}
+  }
 
-/* GET ACCESS SECTIONS */
-.GetAccess {
+  /* GET ACCESS SECTIONS */
+  .GetAccess {
     width: 100%;
     height: auto;
     padding: 0;
     overflow: hidden;
-}
-.GetAccess-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  .GetAccess-container {
+    width: 80%;
+    height: 100vh;
+    position: relative;
+  }
+  .GetAccess-wrap {
     width: 100%;
     height: 50%;
     padding: 3rem 10%;
@@ -323,12 +410,12 @@
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}
-.GetAccess-title h2 {
+  }
+  .GetAccess-title h2 {
     font-size: 1.4rem;
     font-weight: 400;
-}
-.GetAccess-content input {
+  }
+  .GetAccess-content input {
     font-size: 1rem;
     font-weight: 200;
     border: 2px solid rgb(163, 163, 163);
@@ -337,8 +424,634 @@
     border-right: 0;
     box-sizing: border-box;
     border-radius: 0 !important;
+  }
+  .GetAccess-btn {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  .GetAccess-btn button {
+    width: 100%;
+    margin: 0;
+  }
+  .GetAccess-btn span {
+    margin: 0 1rem;
+  }
+  .GetAccess-btn-investor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+  }
 }
-.GetAccess-btn {
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+  /* NAVBAR SECTIONS */
+  .NavBar {
+    display: none !important;
+  }
+  .NavBar-mobile {
+    display: block;
+    z-index: 100;
+  }
+  .NavBar-mobile-container {
+    width: 100vw;
+    height: auto;
+  }
+  .NavBar-mobile-wrap {
+    width: 100vw;
+    height: auto;
+    position: relative;
+  }
+  .NavBar-mobile-top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+    background-color: rgb(255, 255, 255);
+  }
+  .NavBar-mobile-logo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    z-index: 5;
+  }
+  .NavBar-mobile-logo img {
+    width: 6rem;
+    height: 100%;
+    cursor: pointer;
+  }
+  .NavBar-mobile-icon {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 0.5rem;
+    z-index: 5;
+  }
+  .NavBar-mobile-lines {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    float: right;
+    cursor: pointer;
+    padding: 1rem;
+    padding-right: 0;
+  }
+  .NavBar-mobile-lines i {
+    font-size: 1.3rem;
+  }
+  .NavBar-mobile-list {
+    display: none;
+  }
+  .NavBar-mobile-hide {
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 5%;
+    padding-top: 7rem;
+    background-color: #818181;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    animation: navHide 0.5s ease-in-out forwards;
+  }
+  @keyframes navHide {
+    0% {
+      right: 0;
+      opacity: 1;
+    }
+    100% {
+      right: -100%;
+      opacity: 0;
+    }
+  }
+  .NavBar-mobile-show {
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 5%;
+    padding-top: 7rem;
+    background-color: #818181;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    opacity: 1;
+    display: block;
+    animation: navShow 0.5s ease-in-out forwards;
+  }
+  @keyframes navShow {
+    0% {
+      right: -100%;
+      opacity: 0;
+    }
+    100% {
+      right: 0;
+      opacity: 1;
+    }
+  }
+
+  .NavBar-mobile-list-container {
+    width: 100%;
+    height: 100%;
+  }
+  .NavBar-mobile-list-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .NavBar-mobile-list-menu {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+  }
+  .NavBar-mobile-list-menu ul li {
+    list-style: none;
+    list-style-type: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 0.3rem;
+    padding-bottom: 0.5rem;
+  }
+  .NavBar-mobile-list-menu ul li a {
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: white;
+  }
+  .NavBar-mobile-list-ivestors {
+    width: 90%;
+    height: auto;
+  }
+  .NavBar-mobile-list-ivestors ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+  .NavBar-mobile-list-ivestors ul li {
+    list-style: none;
+    list-style-type: none;
+    margin-bottom: 1rem;
+  }
+  .NavBar-mobile-list-ivestors ul li a {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    list-style: none;
+  }
+  .NavBar-mobile-list-ivestors ul span {
+    margin: 0 1rem;
+  }
+  .fa-sign-out-alt {
+    color: #ffffff;
+  }
+  .fa-bars {
+    color: #000000;
+  }
+  .NavBar-mobile-list-copyrigh {
+    width: 100%;
+    height: auto;
+  }
+  .NavBar-mobile-list-copyrigh h2 {
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+  }
+
+  /* INVESTORS SECTION */
+
+  .Investor-wrap {
+    width: 100%;
+    height: 50%;
+    padding: 1rem;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -40%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .Investor-welcome h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .Investor-welcome h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .Investor-login h1 {
+    font-size: 0.9rem;
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+  }
+  .Investor-login-btn a {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  .Investor-login-btn {
+    width: 100%;
+    height: 10%;
+    padding: 0.5rem;
+    background-color: #008bcb;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .Investor-getAccess button {
+    width: 100%;
+    height: 10%;
+    padding: 0.5rem;
+    background-color: #008bcb;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+  }
+  .Investor-getAccess button span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+  }
+
+  /* GET ACCESS SECTIONS */
+  .GetAccess {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  .GetAccess-container {
+    width: 80%;
+    height: 100vh;
+    position: relative;
+  }
+  .GetAccess-wrap {
+    width: 100%;
+    height: 50%;
+    padding: 3rem 10%;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -40%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .GetAccess-title h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+  .GetAccess-content input {
+    font-size: 1rem;
+    font-weight: 200;
+    border: 2px solid rgb(163, 163, 163);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    box-sizing: border-box;
+    border-radius: 0 !important;
+  }
+  .GetAccess-btn {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  .GetAccess-btn button {
+    width: 100%;
+    margin: 0;
+  }
+  .GetAccess-btn span {
+    margin: 0 1rem;
+  }
+  .GetAccess-btn-investor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */
+  /* CSS */
+  /* NAVBAR SECTIONS */
+  .NavBar {
+    display: none !important;
+  }
+  .NavBar-mobile {
+    display: block;
+    z-index: 100;
+  }
+  .NavBar-mobile-container {
+    width: 100vw;
+    height: auto;
+  }
+  .NavBar-mobile-wrap {
+    width: 100vw;
+    height: auto;
+    position: relative;
+  }
+  .NavBar-mobile-top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+    background-color: rgb(255, 255, 255);
+  }
+  .NavBar-mobile-logo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    z-index: 5;
+  }
+  .NavBar-mobile-logo img {
+    width: 6rem;
+    height: 100%;
+    cursor: pointer;
+  }
+  .NavBar-mobile-icon {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 0.5rem;
+    z-index: 5;
+  }
+  .NavBar-mobile-lines {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    float: right;
+    cursor: pointer;
+    padding: 1rem;
+    padding-right: 0;
+  }
+  .NavBar-mobile-lines i {
+    font-size: 1.3rem;
+  }
+  .NavBar-mobile-list {
+    display: none;
+  }
+  .NavBar-mobile-hide {
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 5%;
+    padding-top: 7rem;
+    background-color: #818181;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    animation: navHide 0.5s ease-in-out forwards;
+  }
+  @keyframes navHide {
+    0% {
+      right: 0;
+      opacity: 1;
+    }
+    100% {
+      right: -100%;
+      opacity: 0;
+    }
+  }
+  .NavBar-mobile-show {
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 5%;
+    padding-top: 7rem;
+    background-color: #818181;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    opacity: 1;
+    display: block;
+    animation: navShow 0.5s ease-in-out forwards;
+  }
+  @keyframes navShow {
+    0% {
+      right: -100%;
+      opacity: 0;
+    }
+    100% {
+      right: 0;
+      opacity: 1;
+    }
+  }
+
+  .NavBar-mobile-list-container {
+    width: 100%;
+    height: 100%;
+  }
+  .NavBar-mobile-list-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .NavBar-mobile-list-menu {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+  }
+  .NavBar-mobile-list-menu ul li {
+    list-style: none;
+    list-style-type: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 0.3rem;
+    padding-bottom: 0.5rem;
+  }
+  .NavBar-mobile-list-menu ul li a {
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: white;
+  }
+  .NavBar-mobile-list-ivestors {
+    width: 90%;
+    height: auto;
+  }
+  .NavBar-mobile-list-ivestors ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+  .NavBar-mobile-list-ivestors ul li {
+    list-style: none;
+    list-style-type: none;
+    margin-bottom: 1rem;
+  }
+  .NavBar-mobile-list-ivestors ul li a {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    list-style: none;
+  }
+  .NavBar-mobile-list-ivestors ul span {
+    margin: 0 1rem;
+  }
+  .fa-sign-out-alt {
+    color: #ffffff;
+  }
+  .fa-bars {
+    color: #000000;
+  }
+  .NavBar-mobile-list-copyrigh {
+    width: 100%;
+    height: auto;
+  }
+  .NavBar-mobile-list-copyrigh h2 {
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+  }
+
+  /* INVESTORS SECTION */
+
+  .Investor-wrap {
+    width: 100%;
+    height: 50%;
+    padding: 1rem;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -40%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .Investor-welcome h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .Investor-welcome h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .Investor-login h1 {
+    font-size: 0.9rem;
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+  }
+  .Investor-login-btn a {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  .Investor-login-btn {
+    width: 100%;
+    height: 10%;
+    padding: 0.5rem;
+    background-color: #008bcb;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .Investor-getAccess button {
+    width: 100%;
+    height: 10%;
+    padding: 0.5rem;
+    background-color: #008bcb;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+  }
+  .Investor-getAccess button span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+  }
+
+  /* GET ACCESS SECTIONS */
+  .GetAccess {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+  }
+  .GetAccess-wrap {
+    width: 100%;
+    height: 50%;
+    padding: 3rem 10%;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -40%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .GetAccess-title h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+  .GetAccess-content input {
+    font-size: 1rem;
+    font-weight: 200;
+    border: 2px solid rgb(163, 163, 163);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    box-sizing: border-box;
+    border-radius: 0 !important;
+  }
+  .GetAccess-btn {
     width: 100%;
     height: auto;
     display: flex;
@@ -346,13 +1059,329 @@
     justify-content: center;
     align-items: center;
     margin-top: 4rem;
-}
-.GetAccess-btn button {
-    width: 100%;
-    margin: 0 1rem;
-}
-.GetAccess-btn span {
-    margin: 1rem 0;
-}
-    
   }
+  .GetAccess-btn button {
+    width: 100%;
+    margin: 0;
+  }
+  .GetAccess-btn span {
+    margin: 1rem 0;
+  }
+  .GetAccess-btn-investor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0rem;
+    text-align: center;
+  }
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS */
+  /* NAVBAR SECTIONS */
+  .NavBar {
+    display: none !important;
+  }
+  .NavBar-mobile {
+    display: block;
+    z-index: 100;
+  }
+  .NavBar-mobile-container {
+    width: 100vw;
+    height: auto;
+  }
+  .NavBar-mobile-wrap {
+    width: 100vw;
+    height: auto;
+    position: relative;
+  }
+  .NavBar-mobile-top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+    background-color: rgb(255, 255, 255);
+  }
+  .NavBar-mobile-logo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    z-index: 5;
+  }
+  .NavBar-mobile-logo img {
+    width: 6rem;
+    height: 100%;
+    cursor: pointer;
+  }
+  .NavBar-mobile-icon {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 0.5rem;
+    z-index: 5;
+  }
+  .NavBar-mobile-lines {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    float: right;
+    cursor: pointer;
+    padding: 1rem;
+    padding-right: 0;
+  }
+  .NavBar-mobile-lines i {
+    font-size: 1.3rem;
+  }
+  .NavBar-mobile-list {
+    display: none;
+  }
+  .NavBar-mobile-hide {
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 5%;
+    padding-top: 7rem;
+    background-color: #818181;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    animation: navHide 0.5s ease-in-out forwards;
+  }
+  @keyframes navHide {
+    0% {
+      right: 0;
+      opacity: 1;
+    }
+    100% {
+      right: -100%;
+      opacity: 0;
+    }
+  }
+  .NavBar-mobile-show {
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 5%;
+    padding-top: 7rem;
+    background-color: #818181;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    opacity: 1;
+    display: block;
+    animation: navShow 0.5s ease-in-out forwards;
+  }
+  @keyframes navShow {
+    0% {
+      right: -100%;
+      opacity: 0;
+    }
+    100% {
+      right: 0;
+      opacity: 1;
+    }
+  }
+
+  .NavBar-mobile-list-container {
+    width: 100%;
+    height: 100%;
+  }
+  .NavBar-mobile-list-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .NavBar-mobile-list-menu {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+  }
+  .NavBar-mobile-list-menu ul li {
+    list-style: none;
+    list-style-type: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 0.3rem;
+    padding-bottom: 0.5rem;
+  }
+  .NavBar-mobile-list-menu ul li a {
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: white;
+  }
+  .NavBar-mobile-list-ivestors {
+    width: 90%;
+    height: auto;
+  }
+  .NavBar-mobile-list-ivestors ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+  .NavBar-mobile-list-ivestors ul li {
+    list-style: none;
+    list-style-type: none;
+    margin-bottom: 1rem;
+  }
+  .NavBar-mobile-list-ivestors ul li a {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    list-style: none;
+  }
+  .NavBar-mobile-list-ivestors ul span {
+    margin: 0 1rem;
+  }
+  .fa-sign-out-alt {
+    color: #ffffff;
+  }
+  .fa-bars {
+    color: #000000;
+  }
+  .NavBar-mobile-list-copyrigh {
+    width: 100%;
+    height: auto;
+  }
+  .NavBar-mobile-list-copyrigh h2 {
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+  }
+
+  /* INVESTORS SECTION */
+
+  .Investor-wrap {
+    width: 100%;
+    height: 50%;
+    padding: 1rem;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -40%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .Investor-welcome h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .Investor-welcome h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .Investor-login h1 {
+    font-size: 0.9rem;
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+  }
+  .Investor-login-btn a {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  .Investor-login-btn {
+    width: 100%;
+    height: 10%;
+    padding: 0.5rem;
+    background-color: #008bcb;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .Investor-getAccess button {
+    width: 100%;
+    height: 10%;
+    padding: 0.5rem;
+    background-color: #008bcb;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+  }
+  .Investor-getAccess button span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+  }
+
+  /* GET ACCESS SECTIONS */
+  .GetAccess {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+  }
+  .GetAccess-wrap {
+    width: 100%;
+    height: 50%;
+    padding: 3rem 10%;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -40%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .GetAccess-title h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+  .GetAccess-content input {
+    font-size: 1rem;
+    font-weight: 200;
+    border: 2px solid rgb(163, 163, 163);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    box-sizing: border-box;
+    border-radius: 0 !important;
+  }
+  .GetAccess-btn {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  .GetAccess-btn button {
+    width: 100%;
+    margin: 0;
+  }
+  .GetAccess-btn span {
+    margin: 1rem 0;
+  }
+  .GetAccess-btn-investor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0rem;
+    text-align: center;
+  }
+}
