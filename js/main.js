@@ -108,7 +108,6 @@ $(window).scroll(function () {
     zeroSizeHeight =
     $(".Header-container").height() - $(window).height() - baseScroll - scrollTrack,
     newSize = `${100 * (1 - winScrollTop / zeroSizeHeight)}%`;
-console.log(newSize);
   $scrollingDiv.css(
     {
       width: newSize,
