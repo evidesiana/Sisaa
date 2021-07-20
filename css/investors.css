@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-@-ms-viewport{
+@-ms-viewport {
   width: device-width;
 }
 .display-hide {
@@ -192,6 +192,11 @@ title img {
   margin: 0 auto;
   cursor: pointer;
 }
+.Investor-login span {
+  text-align: center;
+  font-size: 0.7rem;
+  color: #aaaaaa;
+}
 .Investor-login-btn a {
   font-size: 1rem;
   font-weight: 400;
@@ -351,6 +356,19 @@ title img {
 .GetAccess-btn button {
   margin: 0 1rem;
   cursor: pointer;
+}
+.GetAccess-btn-investor {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+.GetAccess-btn-investor span {
+  text-align: center;
+  font-size: 0.7rem;
+  color: #aaaaaa;
+  margin-top: .3rem;
 }
 .GetAccess-exit {
   width: 100%;

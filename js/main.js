@@ -1,4 +1,3 @@
-
 // -------------------NAVBAR FIX POSITION---------------------------------
 var num = 50; //number of pixels before modifying styles
 
@@ -72,15 +71,13 @@ $(document).ready(function () {
       $("#Nav").addClass("Navbar-active-colored");
       $(".NavBar-list-container ul li a").addClass("Navbar-scroled-section");
       $(".NavBar-list-container ul span").addClass("Navbar-scroled-section");
-      $("#Header-text").removeClass("display-none");
-      $("#Header-text").addClass("Header-home-right-text-wrap");
+
       $(".NavBar-list-container ul li a").removeClass("Navbar-scroled");
     } else {
       $("#Nav").removeClass("Navbar-active-colored");
       $(".NavBar-list-container ul li a").removeClass("Navbar-scroled-section");
       $(".NavBar-list-container ul span").removeClass("Navbar-scroled-section");
-      $("#Header-text").addClass("display-none");
-      $("#Header-text").removeClass("Header-home-right-text");
+
       $(".NavBar-list-container ul li a").addClass("Navbar-scroled");
     }
   });
@@ -107,10 +104,11 @@ var $scrollingDiv = $("#homeLeft");
 $(window).scroll(function () {
   var winScrollTop = $(window).scrollTop() + 0,
     baseScroll = $(".Header-container").height() / 7,
+    scrollTrack = ( $(".Header-container").height() - $(window).height() - baseScroll) / 3,
     zeroSizeHeight =
-      $(".Header-container").height() - $(window).height() - baseScroll,
+    $(".Header-container").height() - $(window).height() - baseScroll - scrollTrack,
     newSize = `${100 * (1 - winScrollTop / zeroSizeHeight)}%`;
-
+console.log(newSize);
   $scrollingDiv.css(
     {
       width: newSize,
@@ -118,6 +116,14 @@ $(window).scroll(function () {
     500,
     "easeInOutSine"
   );
+
+  if (newSize <= `${0}%`) {
+    $("#Header-text").removeClass("display-none");
+    $("#Header-text").addClass("Header-home-right-text-wrap");
+  } else {
+    $("#Header-text").addClass("display-none");
+    $("#Header-text").removeClass("Header-home-right-text");
+  }
 });
 
 // BACKGROUND SCROLL 3D
