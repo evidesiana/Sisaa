@@ -708,6 +708,7 @@
   border-left: 0;
   border-right: 0;
   box-sizing: border-box;
+  border-radius: 0 !important;
 }
 .ContactUs-form-item input:focus {
   font-size: 1rem;
@@ -726,7 +727,7 @@
   border: 2px solid rgb(163, 163, 163);
   color: rgb(131, 131, 131);
   padding: 0.5rem;
-
+  border-radius: 0 !important;
   border-top: 0;
   border-left: 0;
   border-right: 0;
